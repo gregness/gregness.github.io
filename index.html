@@ -28,7 +28,7 @@
         justify-content: center;
       }
       header {
-        padding: 2rem 2rem 1rem 2rem;
+        padding: 1.5rem 1.5rem 0.5em 1.5rem;
       }
       @media only screen and (min-width: 400px) {
         main {
@@ -64,9 +64,6 @@
         text-wrap: pretty;
         line-height: 1.75;
       }
-      small {
-        font-size: 0.8125rem;
-      }
       .grid {
         display: grid;
         grid-template-columns: [year] 48px [body] minmax(0, 1fr);
@@ -80,36 +77,34 @@
       html::-webkit-scrollbar {
         display: none;
       }
-
       html {
         -ms-overflow-style: none;
         scrollbar-width: none;
+        scroll-behavior: smooth;
       }
     </style>
   </head>
   <body>
     <main>
       <header>
-        <h1>Introduction</h1>
         <img
-          width="104"
-          height="104"
+          width="80"
+          height="80"
           src="greg.jpeg"
           style="
             border-radius: 4rem;
-            float: inline-end;
-            margin-inline-start: 1rem;
-            margin-block-end: 1rem;
+            float: inline-start;
+            margin-inline-end: 1rem;
           "
         />
         <p>
           Just some guy who happens to like consuming & tinkering with the world wide web.
         </p>
         <p>
-          Currently, I'm mostly concerned with front-end development and UI/UX. That's not to imply my curiosity ends there.
+          I'm always trying to keep up with modern web trends. Currently, I'm mostly concerned with front-end development and UI/UX. That's not to imply my curiosity ends there.
         </p>
         <p>
-          I'm always trying to keep up with modern web trends. Over the year's I've gained a lot of professional experience. I've listed it below.
+          Over the year's I've gained a lot of professional experience. I've listed it below.
         </p>
       </header>
       <div class="grids-container">
@@ -124,7 +119,7 @@
         </div>
 
         <div class="grid">
-          <div style="text-align: center"><img width="40px" src="greg.jpeg" class="logo" style="border-radius: 50%" /></div>
+          <div style="text-align: center"><img width="36px" color="gray" src="people.svg" class="logo" /></div>
           <div style="display: flex; flex-direction: column">
             <h3>Freelance project</h3>
             <small>Lead Developer</small>
