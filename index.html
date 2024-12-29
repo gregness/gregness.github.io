@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Greg" />
     <meta name="description" content="My current & past experiences in cyberspace." />
-    <title>Greg's Beehive</title>
+    <title>🇪🇪</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
@@ -85,11 +85,6 @@
       mark {
         background-color: gold;
       }
-      i {
-        font-style: normal;
-        padding: 1rem;
-        position: absolute;
-      }
     </style>
   </head>
   <body>
@@ -106,7 +101,7 @@
             margin-inline-end: 1rem;
           "
         />
-        <h2 style="position: relative">My name is <mark title="Greg">Greg</mark>.<i id="bee">🐝</i></h2>
+        <h2>My name is <mark title="Greg">Greg</mark>.</h2>
         <p>
           I am just some guy who happens to like consuming and tinkering with the world wide web and its workings.
         </p>
@@ -177,52 +172,5 @@
 
       </div>
     </main>
-    <script>
-      class BeeController {
-        constructor() {
-          this.bee = document.getElementById('bee');
-          this.position = { x: 0, y: 0 };
-          this.bzzCount = 0;
-          this.bzzLimit = this.getRandomBzzLimit();
-          this.isMoving = false;
-          this.startBuzzing();
-        }
-
-        getRandomBzzLimit() {
-          return Math.floor(Math.random() * 2) + 2
-        }
-
-        updateBeePosition() {
-          this.bee.style.transform = `translate(calc(-50% + ${this.position.x * 10}px), calc(-50% + ${this.position.y * 20}px))`;
-        }
-
-        async buzz() {
-          if (this.isMoving) return
-          this.isMoving = true
-          const angle = Math.random() * 2 * Math.PI
-          this.position.x += Math.cos(angle)
-          this.position.y += Math.sin(angle)
-          this.bzzCount++
-          this.updateBeePosition()
-          if (this.bzzCount >= this.bzzLimit) {
-            await new Promise(resolve => setTimeout(resolve, 500))
-            this.position = { x: 0, y: 0 }
-            this.bzzCount = 0
-            this.bzzLimit = this.getRandomBzzLimit()
-            this.updateBeePosition()
-          }
-          await new Promise(resolve => setTimeout(resolve, 10))
-          this.isMoving = false
-        }
-
-        startBuzzing() {
-          setInterval(() => {this.buzz()}, 10)
-        }
-      }
-
-      document.addEventListener('DOMContentLoaded', () => {
-        new BeeController()
-      })
-  </script>
   </body>
 </html>
