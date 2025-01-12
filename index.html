@@ -2,174 +2,72 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="keywords" content="HTML, CSS, JavaScript" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="author" content="Greg" />
-    <meta name="description" content="My current & past experiences in cyberspace." />
-    <title>🇪🇪</title>
+    <meta name="description" content="Curious senior web developer." />
+    <title>My website on my domain.</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <style>
-      html,
       body {
-        user-select: none;
         font-family: system-ui, sans-serif;
-        font-size: 100%;
-      }
-      body {
+        font-size: 150%;
         display: flex;
-        height: 100%;
+        height: 100dvh;
         margin: 0 auto;
         flex-direction: column;
         align-items: center;
-        color: #333;
+        background: white;
+        color: black;
         justify-content: center;
-      }
-      header {
-        padding: 1.5rem 1.5rem 0.5em 1.5rem;
-      }
-      @media only screen and (min-width: 400px) {
-        main {
-          margin-block: 2rem;
-          border-radius: 0.5rem;
-        }
-        body {
-          background: snow;
-        }
       }
       main {
         display: flex;
         flex-direction: column;
-        background: white;
-        max-width: 480px;
-        flex-grow: 1;
-        box-shadow: 0 0 0 1px hsla(0, 0%, 0%, 0.1), 0 16px 24px -8px hsla(0, 0%, 0%, 0.25),
-          0 24px 32px -16px hsla(0, 0%, 0%, 0.25);
+        text-align: center;
+        align-items: center;
+        gap: 2rem;
       }
-      h1,
-      h2,
-      h3 {
-        margin-top: 0;
-        margin-bottom: 1rem;
-        text-wrap: balance;
+      nav {
+        display: flex;
+        gap: 2ch;
+        a {
+          text-decoration: none;
+          display: flex;
+
+          color: black;
+          align-items: center;
+          font-weight: 700;
+        }
       }
-      h3 {
-        margin: 0;
-      }
-      p {
-        margin-top: 0;
-        margin-bottom: 1rem;
-        text-wrap: pretty;
-        line-height: 1.75;
-      }
-      .grid {
-        display: grid;
-        grid-template-columns: [year] 48px [body] minmax(0, 1fr);
-        gap: 8px;
-        padding-block-end: 1rem;
-      }
-      .grids-container {
-        padding-block-start: 1rem;
-        padding-inline: 1.5rem;
-      }
-      html::-webkit-scrollbar {
-        display: none;
-      }
-      html {
-        -ms-overflow-style: none;
-        scrollbar-width: none;
-        scroll-behavior: smooth;
-      }
-      mark {
-        background-color: gold;
+      small {
+        font-size: 50%;
+        font-weight: 300;
+        letter-spacing: -0.5px;
       }
     </style>
   </head>
   <body>
     <main>
-      <header>
+      <nav>
+        <a style="gap: 0.25rem" href="https://github.com/gregness"
+          ><img height="28" src="octo.svg" /><span>GitHub</span></a
+        >
+        <a href="https://www.linkedin.com/in/gregnesselmann" style="gap: 1px"
+          ><span>Linked</span><img height="24" src="linkedin.png"
+        /></a>
+      </nav>
+      <div style="line-height: 0.75">
         <img
           width="128"
           height="128"
           src="greg.jpeg"
-          alt="It's a me!"
-          style="
-            border-radius: 4rem;
-            float: inline-start;
-            margin-inline-end: 1rem;
-          "
+          alt="greg"
+          style="border-radius: 50%; display: block"
         />
-        <h2>My name is <mark title="Greg">Greg</mark>.</h2>
-        <p>
-          I am just some guy who happens to like consuming and tinkering with the world wide web and its workings.
-        </p>
-        <p>
-          I'm always trying to keep up with modern web trends. Currently, I'm mostly concerned with front-end development and UI/UX. That's not to imply my curiosity ends there.
-        </p>
-        <p>
-          Over the years I've gained a lot of professional experience. I've listed it below.
-        </p>
-      </header>
-      <div class="grids-container">
-        <div class="grid">
-          <div style="text-align: center"><img width="40" class="logo" style="align-self: center" src="timbeter.svg" /></div>
-          <div style="display: flex; flex-direction: column">
-            <h3>Timbeter</h3>
-            <small>Senior Front-End Developer</small>
-          </div>
-
-          <p style="grid-column-start: body">Responsible for developing new front-end projects.</p>
-        </div>
-
-        <div class="grid">
-          <div style="text-align: center"><img width="36px" color="gray" src="people.svg" class="logo" /></div>
-          <div style="display: flex; flex-direction: column">
-            <h3>Freelance project</h3>
-            <small>Lead Developer</small>
-          </div>
-          <p style="grid-column-start: body">
-            Set up a CMS as a website and an OCR integration to provide translation quotes. AWS, JavaScript and setting up
-            infrastructure.
-          </p>
-        </div>
-
-        <div class="grid">
-          <div style="text-align: center"><img height="40" src="bigbank.svg" class="logo" /></div>
-          <div style="display: flex; flex-direction: column">
-            <h3>Bigbank</h3>
-            <small>Security Engineer</small>
-          </div>
-          <p style="grid-column-start: body">
-            Development of internal security tools, routine monitoring and analysis of potential security threats, hardening
-            container security of bank applications.
-          </p>
-        </div>
-
-        <div class="grid">
-          <div style="text-align: center"><img height="40" fill="black" src="pipedrive.svg" class="logo" /></div>
-          <div style="display: flex; flex-direction: column">
-            <h3>Pipedrive</h3>
-            <small>Back-End Developer Intern</small>
-          </div>
-          <p style="grid-column-start: body">
-            In addition to back-end development I took part in front-end development according to pixel perfect design using
-            React.
-          </p>
-        </div>
-
-        <div class="grid">
-          <div style="text-align: center"><img height="40" fill="black" src="tallinnuniversity.svg" class="logo" /></div>
-          <div style="display: flex; flex-direction: column">
-            <h3>Tallinn University</h3>
-            <small>Developer</small>
-          </div>
-          <p style="grid-column-start: body">
-            Developed a React Native app that functioned as a guide for freshmen.
-          </p>
-        </div>
-
+        <small>señor web developer</small>
       </div>
     </main>
   </body>
