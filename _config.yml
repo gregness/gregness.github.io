@@ -1,8 +1,8 @@
 url: https://greg.ee
 baseurl: /
-title: the greg's blog
-tagline: you might find something interesting here
-description: I am greg and this is my blog. it might just be that you find something interesting here!
+title: The Greg's Blog
+tagline: You might find something interesting here!
+description: I am Greg and this is my blog. It might just be that you find something interesting here!
 logo: /logo.png
 permalink: /:title
 markdown: kramdown
