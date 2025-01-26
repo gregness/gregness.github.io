@@ -9,11 +9,13 @@ layout: compress
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow">
-  <meta name="view-transition" content="same-origin" />
   <style>
-    ::view-transition-old(root),
-    ::view-transition-new(root) {
-      animation-duration: 0.5s;
+    @media (max-width: 480px) {
+      img {
+        width: 100% !important;
+        margin: 0;
+        float: unset;
+      }
     }
 
     html {
@@ -26,10 +28,10 @@ layout: compress
       background: Canvas;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       margin: 0 auto;
-      max-width: 40ch;
+      max-width: 45ch;
       padding: 1rem;
       display: flex;
-      line-height: 1.375;
+      line-height: 1.75;
       flex-direction: column;
     }
 
@@ -68,7 +70,7 @@ layout: compress
     }
 
     :where(section, article)>header {
-      margin-bottom: 1rem;
+      margin-bottom: 0.25rem;
     }
 
     img {
@@ -112,8 +114,6 @@ layout: compress
 
     p {
       text-wrap: pretty;
-      opacity: 0.85;
-      font-weight: 300;
 
       &:first-of-type {
         margin-top: 0
@@ -159,11 +159,10 @@ layout: compress
           gap: 0.5rem; text-decoration: none;">
         <small style="display: inline; opacity: 0.875">Show all posts</small>
       </a>
-      <a href="https://www.linkedin.com/in/ea26b0075d29530c636d6791bb5d73f4" style="line-height: 1; height: 24px; display: flex;
+      <a href="https://www.linkedin.com/in/ea26b0075d29530c636d6791bb5d73f4" style="line-height: 1; height: 20px; display: flex;
           align-items: center;
-          gap: 0.5rem; text-decoration: none;">
-        <small style="display: inline; opacity: 0.5">Want to get in touch?</small>
-        <img style="display: inline; width: 18px; height: 18px" src="linkedin.webp" loading="lazy" decoding="async"
+          gap: 0.5rem; text-decoration: none; padding: 0">
+        <img style="display: inline; width: 20px; height: 20px" src="linkedin.webp" loading="lazy" decoding="async"
           alt="LinkedIn">
       </a>
     </nav>
