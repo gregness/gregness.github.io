@@ -13,5 +13,3 @@ Getting this [Jekyll](https://jekyllrb.com/) blog live will be a great testament
 After meddling with [Hyde](https://hyde.getpoole.com/) for a while, I got kind of worn out. I was doing all these tweaks and changes and it never stopped because it's kind of an old theme, so there is much to do in that regard.
 
 Instead, I opted to create a blank blog. Why not? I can add just what I want and not a bit more.
-
-> “Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.”

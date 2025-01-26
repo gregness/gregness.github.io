@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-26T04:07:35+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">greg.ee</title><entry><title type="html">Why I made this website</title><link href="http://localhost:4000/why-i-made-this-website" rel="alternate" type="text/html" title="Why I made this website" /><published>2025-01-26T00:00:00+02:00</published><updated>2025-01-26T00:00:00+02:00</updated><id>http://localhost:4000/why-i-made-this-website</id><content type="html" xml:base="http://localhost:4000/why-i-made-this-website"><![CDATA[<p><img src="bees.webp" alt="Hummingbird and bees sharing a water fountain" loading="lazy" width="768" height="512" decoding="async" /></p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-01-26T04:29:06+02:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">greg.ee</title><entry><title type="html">Why I made this website</title><link href="http://localhost:4000/why-i-made-this-website" rel="alternate" type="text/html" title="Why I made this website" /><published>2025-01-26T00:00:00+02:00</published><updated>2025-01-26T00:00:00+02:00</updated><id>http://localhost:4000/why-i-made-this-website</id><content type="html" xml:base="http://localhost:4000/why-i-made-this-website"><![CDATA[<p><img src="bees.webp" alt="Hummingbird and bees sharing a water fountain" loading="lazy" width="768" height="512" decoding="async" /></p>
 
 <p>I have always thought of posting, but never did. I’m not sure what to post. What I am kind of sure about is that I want to start each post with an image I like.</p>
 
@@ -8,8 +8,4 @@
 
 <p>After meddling with <a href="https://hyde.getpoole.com/">Hyde</a> for a while, I got kind of worn out. I was doing all these tweaks and changes and it never stopped because it’s kind of an old theme, so there is much to do in that regard.</p>
 
-<p>Instead, I opted to create a blank blog. Why not? I can add just what I want and not a bit more.</p>
-
-<blockquote>
-  <p>“Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.”</p>
-</blockquote>]]></content><author><name></name></author><summary type="html"><![CDATA[]]></summary></entry></feed>
+<p>Instead, I opted to create a blank blog. Why not? I can add just what I want and not a bit more.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[]]></summary></entry></feed>
