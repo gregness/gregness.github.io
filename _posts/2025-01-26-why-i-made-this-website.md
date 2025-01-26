@@ -2,7 +2,7 @@
 title: Why I made this website
 layout: post
 ---
-<img src="bees.webp"  alt="Hummingbird and four bees sharing a water fountain" loading="lazy" width="768" height="512" decoding="async">
+<img src="bees.webp"  alt="Hummingbird and four bees sharing a water fountain" loading="lazy" width="450" height="300" decoding="async">
 
 I have always thought of posting, but never did. I’m not sure what to post. What I am kind of sure about is that I want to start each post with an image I like.
 
