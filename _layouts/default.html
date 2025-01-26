@@ -41,8 +41,8 @@ layout: compress
     }
 
     body {
-      --system-bg: color-mix(in oklch, Canvas, CanvasText calc((var(--contrast-ratio) - 4) * 25%));
-      --system-text: color-mix(in oklch, CanvasText, Canvas calc((var(--contrast-ratio) - 4) * 25%));
+      --system-bg: color-mix(in oklch, Canvas, CanvasText 15%);
+      --system-text: color-mix(in oklch, CanvasText, Canvas 15%);
       background: var(--system-bg);
       color: var(--system-text);
     }
@@ -153,6 +153,7 @@ layout: compress
     }
 
     a {
+      color: inherit;
       :not(p)>& {
         display: block;
         padding-inline: 0.25rem;
@@ -164,7 +165,6 @@ layout: compress
       }
 
       text-decoration: none;
-      color: CanvasText;
 
       :not(p)>&:hover {
         outline-color: Highlight;
