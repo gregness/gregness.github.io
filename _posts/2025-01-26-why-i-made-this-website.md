@@ -13,3 +13,5 @@ Getting this [Jekyll](https://jekyllrb.com/) blog live will be a great testament
 After meddling with [Hyde](https://hyde.getpoole.com/) for a while, I got kind of worn out. I was doing all these changes and it never stopped because it's kind of an old theme, so there is much to do.
 
 Instead, I opted to create a blank blog. Why not? I can add just what I want and not a bit more. I'll share more about this process soon.
+
+Oh and the main reason? I was bored. 🐸
