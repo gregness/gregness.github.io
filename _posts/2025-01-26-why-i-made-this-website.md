@@ -4,20 +4,18 @@ layout: post
 ---
 
 <img src="/assets/hummingbird_and_bees.webp"  alt="Hummingbird and bees sharing a water fountain" width="450" height="300" decoding="async">
-The thought of blogging has crossed my mind many times.
+The thought of blogging has crossed my mind many a time.
 
-Never have I even taken the first step, which usually is all that's necessary.
+I've never even taken the first step, which is usually all that's required.
 
-But getting this [Jekyll](https://jekyllrb.com/) blog live will be a great testament to me actually following through with blogging.
+But getting this [Jekyll](https://jekyllrb.com/) blog live is a great testament to my ability to follow through.
 
 After meddling with [Hyde](https://hyde.getpoole.com/) – a Jekyll theme I like – for a while, I got kind of worn out and lost momentum.
 
 I was doing all of these stylistic changes, and I never got anywhere with it.
 
-Instead, I started from zero. I created a blank blog. Why not?
+Instead, I started from zero. I created a blank [Jekyll](https://jekyllrb.com/) blog.
 
 And voilà! What you see before your eyes is the fruit of that endeavor.
 
-Oh, and the main reason I created this blog? I was bored.
-
-Plus, I want to improve my writing. I want to hone my articulation by putting thoughts & insights in writing.
+I want to improve my writing. I want to hone my articulation by putting thoughts and insights in writing. In this blog.
