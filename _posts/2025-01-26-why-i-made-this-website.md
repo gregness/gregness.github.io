@@ -18,4 +18,4 @@ Instead, I started from zero. I created a blank [Jekyll](https://jekyllrb.com/) 
 
 And voilà! What you see before your eyes is the fruit of that endeavor.
 
-I want to improve my writing. I want to hone my articulation by putting thoughts and insights in writing. In this blog.
+I want to improve my writing. I want to be able to articulate myself in a coherent manner, be it verbally or in writing.
