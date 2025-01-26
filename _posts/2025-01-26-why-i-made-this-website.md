@@ -18,4 +18,6 @@ Instead, I started from zero. I created a blank blog. Why not?
 
 And voilà! What you see before your eyes is the fruit of that endeavor.
 
-Oh, and the main reason I creatd this blog? I was bored. 🐸
+Oh, and the main reason I created this blog? I was bored.
+
+Plus, I want to improve my writing. I want to hone my articulation by putting thoughts & insights in writing.
