@@ -4,6 +4,7 @@ layout: compress
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +12,7 @@ layout: compress
   <style>
     body {
       color-scheme: light dark;
+      font-size: 20px;
       color: CanvasText;
       background: Canvas;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
@@ -39,6 +41,21 @@ layout: compress
           text-decoration: none
         }
       }
+    }
+
+    article {
+      @media (prefers-color-scheme: dark) {
+        a {
+          color: rgb(158, 158, 255)
+        }
+      }
+
+      @media (prefers-color-scheme: light) {
+        a {
+          color: rgb(0, 0, 238)
+        }
+      }
+
     }
 
     :where(section, article)>header {
@@ -84,7 +101,6 @@ layout: compress
     a {
       :not(p)>& {
         display: block;
-        width: fit-content;
       }
 
       :is(p)>& {
