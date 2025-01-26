@@ -11,7 +11,9 @@ layout: compress
   <meta name="robots" content="index,follow">
   <style>
     @media (max-width: 480px) {
-      article {
+      html {
+        font-size: 16px;
+      } article {
         img {
           width: 100% !important;
           margin: 0;
@@ -20,18 +22,43 @@ layout: compress
       }
     }
 
+    @property --system-bg {
+      syntax: '<color>';
+      inherits: false;
+      initial-value: Canvas;
+    }
+
+    @property --system-text {
+      syntax: '<color>';
+      inherits: false;
+      initial-value: CanvasText;
+    }
+
+    @property --contrast-ratio {
+      syntax: '<number>';
+      inherits: false;
+      initial-value: 4.5;
+    }
+
+    body {
+      --system-bg: color-mix(in oklch, Canvas, CanvasText calc((var(--contrast-ratio) - 4) * 25%));
+      --system-text: color-mix(in oklch, CanvasText, Canvas calc((var(--contrast-ratio) - 4) * 25%));
+      background: var(--system-bg);
+      color: var(--system-text);
+    }
+
     html {
       font-size: 20px;
     }
 
     body {
       color-scheme: light dark;
-      color: CanvasText;
-      background: Canvas;
+      color: var(--system-text);
+      background: var(--system-bg);
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       margin: 0 auto;
       max-width: 45ch;
-      padding: 1.25rem;
+      padding: 0.5rem 1rem 2rem 1rem;
       display: flex;
       line-height: 1.75;
       flex-direction: column;
@@ -43,8 +70,9 @@ layout: compress
       font-weight: 300
     }
 
-    header {
+    header[role="banner"] {
       nav {
+        height: 2rem;
         align-items: center;
         display: flex;
         justify-content: space-between;
@@ -84,10 +112,12 @@ layout: compress
 
     hr {
       border: none;
-      border-top: 1.25px solid CanvasText;
+      border-top: 1px solid var(--system-bg);
       width: 100%;
-      opacity: 0.125;
-      margin-block: 0.75rem;
+      opacity: 0.25;
+      /* margin-block: 0.75rem; */
+      margin-block-start: 0.5rem;
+      margin-block-end: 0.75rem;
     }
 
     time {
@@ -156,15 +186,13 @@ layout: compress
 <body>
   <header role="banner">
     <nav role="navigation">
-      <a href="/" style="line-height: 1; height: 24px; display: flex;
-          align-items: center;
-          gap: 0.5rem; text-decoration: none;">
+      <a href="/" style="line-height: 1; height: 24px; text-decoration: none;">
         <small style="display: inline; opacity: 0.75; font-weight: normal">Show all posts</small>
       </a>
       <a href="https://www.linkedin.com/in/ea26b0075d29530c636d6791bb5d73f4" style="line-height: 1; height: 28px; width: 28px;
           align-items: center;
           gap: 0.5rem; text-decoration: none; padding: 0">
-        <img style="display: inline; width: 20px; height: 20px; padding: 4px" src="linkedin.webp" loading="lazy"
+        <img style="display: inline; width: 24px; height: 24px; padding: 2px" src="linkedin.webp" loading="lazy"
           decoding="async" alt="LinkedIn">
       </a>
     </nav>
