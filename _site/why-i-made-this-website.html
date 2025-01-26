@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="personal website of greg. you might find posts inside">
+  <meta name="robots" content="index,follow">
+  <meta name="keywords" content="technology,javascript,ruby">
+  <meta name="author" content="greg">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Why I made this website - greg.ee</title>
+  <style>
+    @media (prefers-color-scheme: light) {
+      a {
+        outline-color: Highlight !important;
+      }
+    }
+
+    body {
+      color-scheme: light dark;
+      color: CanvasText;
+      background: Canvas;
+      font-family: system-ui, sans-serif;
+      margin: 0 auto;
+      max-width: 40ch;
+      padding: 1rem;
+      display: flex;
+      line-height: 1.5;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    small { opacity: 0.625; font-size: 75%; font-weight: 300 }
+
+    header {
+      nav {
+        align-items: center;
+        display: flex;
+        column-gap: 1rem;
+        flex-wrap: wrap;
+        a { text-decoration: none }
+      }
+    }
+
+    :where(section, article) > header {
+      margin-bottom: 1rem;
+    }
+
+    img {
+      object-fit: contain;
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    hr {
+      border: none;
+      margin-block-end: 1rem;
+      border-top: 1.25px solid CanvasText;
+      width: 100%;
+      opacity: 0.125;
+    }
+
+    b {
+      font-weight: 600;
+      display: block;
+    }
+
+    h1, h2, h3 {
+      text-wrap: balance;
+      line-height: 1;
+      margin: 0;
+    }
+
+    p {
+      text-wrap: pretty;
+      &:first-of-type { margin-top: 0 }
+    }
+
+    a {
+      :not(p) > & {
+        display: block;
+        width: fit-content;
+      }
+      :is(p) > & {
+        text-decoration: underline;
+        text-decoration-thickness: 1.5px;
+      }
+      text-decoration: none;
+      color: CanvasText;
+      small { display: block }
+      &:hover {
+        outline-color: ButtonFace;
+        outline-offset: 1px;
+        outline-style: auto;
+        outline-width: 5px;
+      }
+    }
+
+    ul { padding: 0; list-style: none }
+    figure { margin: 0 }
+    pre { padding: 1rem }
+    blockquote { font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-size: 1.125rem }
+    .highlight table td { padding: 5px; }
+    .highlight table pre { margin: 0; }
+    .highlight, .highlight .w {
+      color: #f8f8f2;
+      background-color: #272822;
+    }
+    .highlight .err {
+      color: #272822;
+      background-color: #f92672;
+    }
+    .highlight .c, .highlight .ch, .highlight .cd, .highlight .cm, .highlight .cpf, .highlight .c1, .highlight .cs {
+      color: #75715e;
+    }
+    .highlight .cp {
+      color: #f4bf75;
+    }
+    .highlight .nt {
+      color: #f4bf75;
+    }
+    .highlight .o, .highlight .ow {
+      color: #f8f8f2;
+    }
+    .highlight .p, .highlight .pi {
+      color: #f8f8f2;
+    }
+    .highlight .gi {
+      color: #a6e22e;
+    }
+    .highlight .gd {
+      color: #f92672;
+    }
+    .highlight .gh {
+      color: #66d9ef;
+      background-color: #272822;
+      font-weight: bold;
+    }
+    .highlight .ge {
+      font-style: italic;
+    }
+    .highlight .ges {
+      font-weight: bold;
+      font-style: italic;
+    }
+    .highlight .gs {
+      font-weight: bold;
+    }
+    .highlight .k, .highlight .kn, .highlight .kp, .highlight .kr, .highlight .kv {
+      color: #ae81ff;
+    }
+    .highlight .kc {
+      color: #fd971f;
+    }
+    .highlight .kt {
+      color: #fd971f;
+    }
+    .highlight .kd {
+      color: #fd971f;
+    }
+    .highlight .s, .highlight .sb, .highlight .sc, .highlight .dl, .highlight .sd, .highlight .s2, .highlight .sh, .highlight .sx, .highlight .s1 {
+      color: #a6e22e;
+    }
+    .highlight .sa {
+      color: #ae81ff;
+    }
+    .highlight .sr {
+      color: #a1efe4;
+    }
+    .highlight .si {
+      color: #cc6633;
+    }
+    .highlight .se {
+      color: #cc6633;
+    }
+    .highlight .nn {
+      color: #f4bf75;
+    }
+    .highlight .nc {
+      color: #f4bf75;
+    }
+    .highlight .no {
+      color: #f4bf75;
+    }
+    .highlight .na {
+      color: #66d9ef;
+    }
+    .highlight .m, .highlight .mb, .highlight .mf, .highlight .mh, .highlight .mi, .highlight .il, .highlight .mo, .highlight .mx {
+      color: #a6e22e;
+    }
+    .highlight .ss {
+      color: #a6e22e;
+    }
+
+  </style>
+</head>
+  <body>
+    <main role="main">
+      <article>
+  <header>
+    <h1>Why I made this website</h1>
+    <time datetime="2025-01-26 00:00:00 +0200"><small>26 Jan 2025</small><time>
+  </header>
+  <p><img src="bees.webp" alt="Hummingbird and bees sharing a water fountain" loading="lazy" width="768" height="512" decoding="async" /></p>
+
+<p>I have always thought of posting, but never did. I’m not sure what to post. What I am kind of sure about is that I want to start each post with an image I like.</p>
+
+<p>So here is a hummingbird and four bees sharing a drinking fountain. There is something fascinating about that photo. Will I order a print? Who knows.</p>
+
+<p>Getting this <a href="https://jekyllrb.com/">Jekyll</a> blog live will be a great testament to me actually following through with this blog <i>thingamajig</i>.</p>
+
+<p>After meddling with <a href="https://hyde.getpoole.com/">Hyde</a> for a while, I got kind of worn out. I was doing all these tweaks and changes and it never stopped because it’s kind of an old theme, so there is much to do in that regard.</p>
+
+<p>Instead, I opted to create a blank blog. Why not? I can add just what I want and not a bit more.</p>
+
+<blockquote>
+  <p>“Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.”</p>
+</blockquote>
+
+</article>
+
+    </main>
+  </body>
+</html>

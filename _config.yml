@@ -1,0 +1,18 @@
+url: "https://greg.ee"
+baseurl: "/"
+title: "greg.ee"
+permalink: /:title
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-image-size
+
+feed:
+  path: feed.xml
+
+image_size:
+  width: 400
+  quality: 85
