@@ -14,7 +14,7 @@ After meddling with [Hyde](https://hyde.getpoole.com/) – a Jekyll theme I like
 
 I was doing all of these stylistic changes, and I never got anywhere with it.
 
-Instead, I started from zero. I created a blank [Jekyll](https://jekyllrb.com/) blog.
+Instead, I started from zero. I created a blank Jekyll blog.
 
 And voilà! What you see before your eyes is the fruit of that endeavor.
 
