@@ -18,7 +18,7 @@ image_size:
   quality: 85
 
 compress_html:
-  clippings: []
+  clippings: all
   comments: []
   endings: []
   ignore:
