@@ -3,7 +3,7 @@ title: Why I made this website
 layout: post
 ---
 
-<img src="bees.webp"  alt="Hummingbird and four bees sharing a water fountain" width="450" height="300" decoding="async">
+<img src="/assets/hummingbird_and_bees.webp"  alt="Hummingbird and bees sharing a water fountain" width="450" height="300" decoding="async">
 The thought of blogging has crossed my mind many times.
 
 Never have I even taken the first step, which usually is all that's necessary.
