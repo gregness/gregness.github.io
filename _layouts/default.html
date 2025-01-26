@@ -1,3 +1,6 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,7 +30,6 @@
       display: flex;
       line-height: 1.5;
       flex-direction: column;
-      gap: 1rem;
     }
 
     small { opacity: 0.625; font-size: 75%; font-weight: 300 }
@@ -55,10 +57,10 @@
 
     hr {
       border: none;
-      margin-block-end: 1rem;
       border-top: 1.25px solid CanvasText;
       width: 100%;
       opacity: 0.125;
+      margin-block: 0.75rem;
     }
 
     b {
@@ -196,6 +198,17 @@
   </style>
 </head>
   <body>
+    <header>
+      <p style="display: flex; align-items: center; gap: 0.375rem; justify-content: flex-end; margin: 0">
+        <small style="margin-right: auto">Figuring things out</small>
+        <small>Want to get in touch?</small>
+        <a href="https://www.linkedin.com/in/ea26b0075d29530c636d6791bb5d73f4" style="line-height: 1; height: 16px">
+          <img style="display: inline; width: 16px; height: 16px" width="16" height="16" src="linkedin.webp" loading="lazy"
+            decoding="async" alt="LinkedIn">
+        </a>
+      </p>
+    </header>
+    <hr>
     <main role="main">
       {{ content }}
     </main>
