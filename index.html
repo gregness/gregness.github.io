@@ -7,7 +7,7 @@ layout: default
   <li>
     <a href="{{ post.url }}"><b>{{ post.title }}</b>
       <time datetime="{{ post.date | date: '%Y-%m-%d' }}">
-        <small>{{ post.date | date_to_string }}</small>
+        {{ post.date | date_to_string }}
       </time>
     </a>
   </li>

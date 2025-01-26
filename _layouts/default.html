@@ -77,6 +77,16 @@ layout: compress
       margin-block: 0.75rem;
     }
 
+    time {
+      :is(a > &) {
+        display: block;
+      }
+
+      opacity: 0.625;
+      font-size: 75%;
+      font-weight: 300;
+    }
+
     b {
       font-weight: 600;
       display: block;
@@ -103,7 +113,7 @@ layout: compress
         display: block;
       }
 
-      :is(p)>& {
+      :is(p) > & {
         text-decoration: underline;
         text-decoration-thickness: 1.5px;
       }
@@ -111,11 +121,7 @@ layout: compress
       text-decoration: none;
       color: CanvasText;
 
-      small {
-        display: block
-      }
-
-      &:hover {
+      :not(p) > &:hover {
         outline-color: Highlight;
         outline-color: -webkit-focus-ring-color;
         outline-offset: 1px;
@@ -134,17 +140,17 @@ layout: compress
 
 <body>
   <header role="banner">
-    <p style="display: flex; align-items: center; gap: 0.375rem; justify-content: flex-end; margin: 0">
+    <div style="display: flex; align-items: center; gap: 0.375rem; justify-content: flex-end; margin: 0">
       <a href="/"
         style="margin-right: auto; font-weight: 900; font-stretch: ultra-expanded; font-size: 1.25rem; text-decoration: none;">greg.ee</a>
-      <a href="https://www.linkedin.com/in/ea26b0075d29530c636d6791bb5d73f4" style="line-height: 1; height: 16px; display: flex;
+      <a href="https://www.linkedin.com/in/ea26b0075d29530c636d6791bb5d73f4" style="line-height: 1; height: 20px; display: flex;
           align-items: center;
           gap: 0.375rem; text-decoration: none;">
         <small style="display: inline">Want to get in touch?</small>
-        <img style="display: inline; width: 16px; height: 16px" width="16" height="16" src="linkedin.webp"
+        <img style="display: inline; width: 20px; height: 20px" src="linkedin.webp"
           loading="lazy" decoding="async" alt="LinkedIn">
       </a>
-    </p>
+    </div>
   </header>
   <hr>
   <main role="main">
