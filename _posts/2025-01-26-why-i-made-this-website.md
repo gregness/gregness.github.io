@@ -4,14 +4,18 @@ layout: post
 ---
 
 <img src="bees.webp"  alt="Hummingbird and four bees sharing a water fountain" width="450" height="300" decoding="async">
-I have always thought of posting, but never did. I’m not sure what to post. What I am kind of sure about is that I want to start each post with an image I like.
+The thought of blogging has crossed my mind many times.
 
-So here is a hummingbird and four bees sharing a drinking fountain. There is something fascinating about that photo. Will I order a print? Who knows.
+Never have I even taken the first step, which usually is all that's necessary.
 
-Getting this [Jekyll](https://jekyllrb.com/) blog live will be a great testament to me actually following through with this blog. A betting man would not have put money on that.
+But getting this [Jekyll](https://jekyllrb.com/) blog live will be a great testament to me actually following through with blogging.
 
-After meddling with [Hyde](https://hyde.getpoole.com/) for a while, I got kind of worn out. I was doing all these changes and it never stopped because it's kind of an old theme, so there is much to do.
+After meddling with [Hyde](https://hyde.getpoole.com/) – a Jekyll theme I like – for a while, I got kind of worn out and lost momentum.
 
-Instead, I opted to create a blank blog. Why not? I can add just what I want and not a bit more. I'll share more about this process soon.
+I was doing all of these stylistic changes, and I never got anywhere with it.
 
-Oh and the main reason? I was bored. 🐸
+Instead, I started from zero. I created a blank blog. Why not?
+
+And voilà! What you see before your eyes is the fruit of that endeavor.
+
+Oh, and the main reason I creatd this blog? I was bored. 🐸
