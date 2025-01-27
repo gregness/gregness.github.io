@@ -1,0 +1,272 @@
+<style>
+  :root {
+    --system-bg: oklch(25% 0 0);
+    --system-text: oklch(85% 0 0);
+    --system-text-darker: oklch(65% 0 0);
+    --global-inline-padding: 1rem;
+    --global-outline-style: solid;
+    --global-outline-color: rgba(255, 255, 255, 0.25);
+    --global-outline-width: 0.125rem;
+    --global-outline-offset: 2px;
+    --link-color: cornflowerblue;
+  }
+
+  html {
+    accent-color: cornflowerblue;
+    height: 100%;
+    font-size: 16px;
+    scroll-behavior: smooth;
+  }
+
+  @media (min-width: 360px) {
+    html {
+      font-size: 18px !important;
+      --global-inline-padding: 1.5rem !important;
+    }
+  }
+
+  @media (min-width: 480px) {
+    html {
+      font-size: 20px !important;
+      --global-inline-padding: 2rem !important;
+    }
+  }
+
+  @media (max-width: 480px) {
+    #show-all-posts {
+      margin: 0 auto;
+    }
+
+    main>header {
+      text-align: center;
+    }
+
+    main {
+      img {
+        min-width: 240px;
+        width: 50%;
+        margin: 1rem auto !important;
+        margin-bottom: 2rem !important;
+        float: unset !important;
+      }
+    }
+  }
+
+  body {
+    background: var(--system-bg);
+    color: var(--system-text);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    margin: 0 auto !important;
+    max-width: 60ch;
+    line-height: 1.5;
+  }
+
+  header[role="banner"] {
+    padding-block: 1rem;
+    padding-inline: var(--global-inline-padding);
+
+    nav {
+      align-items: baseline;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      a {
+        text-decoration: none
+      }
+    }
+  }
+
+  main {
+    padding-block: 2rem;
+    padding-inline: var(--global-inline-padding);
+    flex-grow: 1;
+  }
+
+  footer {
+    padding-block: 1rem;
+    padding-inline: var(--global-inline-padding);
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+
+  }
+
+  small {
+    font-size: 80%;
+  }
+
+  main>header {
+    margin-bottom: 1rem;
+  }
+
+  img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid white;
+    width: 100%;
+    opacity: 0.1875;
+    margin: 0;
+  }
+
+  b {
+    font-weight: 600;
+    display: block;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-weight: 600;
+    text-wrap: balance;
+    line-height: 1;
+    margin: 0;
+  }
+
+  p {
+    text-wrap: pretty;
+
+    &:first-of-type {
+      margin-top: 0
+    }
+  }
+
+  main {
+    img {
+      width: 50% !important;
+      margin-left: 2ch;
+      margin-bottom: 2ch;
+      float: right;
+    }
+  }
+
+  a {
+    &:not([class]) {
+      color: var(--link-color);
+    }
+
+    color: inherit;
+
+    :not(p)>& {
+      display: block;
+      border-radius: 0.125rem;
+    }
+
+    :is(p)>& {
+      text-decoration: underline;
+      text-decoration-thickness: 1.5px;
+      text-underline-offset: 0.125rem;
+      border-radius: 0.125rem;
+      outline-color: var(--link-color);
+
+      &:focus:not(:active) {
+        outline-color: var(--link-color);
+        text-decoration: none;
+      }
+
+      &:active {
+        outline-color: var(--link-color);
+        outline-offset: var(--global-outline-offset);
+        outline-style: var(--global-outline-style);
+        outline-width: var(--global-outline-width);
+        text-decoration: none;
+      }
+    }
+
+    text-decoration: none;
+
+    :not(p)>&:hover {
+      outline-color: var(--global-outline-color);
+      outline-offset: var(--global-outline-offset);
+      outline-style: var(--global-outline-style);
+      outline-width: var(--global-outline-width);
+    }
+  }
+
+  :focus-visible {
+    outline-color: var(--global-outline-color);
+    outline-offset: var(--global-outline-offset);
+    outline-style: var(--global-outline-style);
+    outline-width: var(--global-outline-width);
+  }
+
+  ul {
+    padding: 0;
+    list-style: none
+  }
+
+  .text-darker {
+    color: var(--system-text-darker);
+  }
+
+  .py-4 {
+    padding-block: 1rem
+  }
+
+  .py-3 {
+    padding-block: 0.5rem
+  }
+
+  .py-2 {
+    padding-block: 0.25rem
+  }
+
+  .py-1 {
+    padding-block: 0.125rem
+  }
+
+  .px-4 {
+    padding-inline: 1rem
+  }
+
+  .px-3 {
+    padding-inline: 0.5rem
+  }
+
+  .px-2 {
+    padding-inline: 0.25rem
+  }
+
+  .px-1 {
+    padding-inline: 0.125rem
+  }
+
+  .fw-bold {
+    font-weight: 700
+  }
+
+  .fw-semibold {
+    font-weight: 600
+  }
+
+  .fw-medium {
+    font-weight: 500
+  }
+
+  .fw-normal {
+    font-weight: 400
+  }
+
+  .fw-light {
+    font-weight: 300
+  }
+
+
+  .small {
+    font-size: 80%
+  }
+
+  .lh-1 {
+    line-height: 1
+  }
+
+  .lh-md {
+    line-height: 1.25
+  }
+</style>

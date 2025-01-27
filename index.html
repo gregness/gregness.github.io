@@ -6,13 +6,13 @@ layout: default
   {% for post in site.posts reversed %}
   <li>
     <a class="px-3 py-1" href="{{ post.url }}"><b>{{ post.title }}</b>
-      <time class="fw-light small opacity-75" datetime="{{ post.date | date: '%Y-%m-%d' }}">
+      <time class="fw-light small text-darker" datetime="{{ post.date | date: '%Y-%m-%d' }}">
         {{ post.date | date_to_string }}
       </time>
       {% if post.labels %}
       {% for label in post.labels %}
-      <small class="opacity-75 px-1">·</small>
-      <small class="fw-light opacity-75">{{ label }}</small>
+      <small class="text-darker px-1">·</small>
+      <small class="fw-light text-darker">{{ label }}</small>
       {% endfor %}
       {% endif %}
     </a>
