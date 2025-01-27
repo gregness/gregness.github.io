@@ -2,7 +2,7 @@
 title: Figuring things out
 layout: default
 ---
-<ul style="display: flex; flex-direction: column; gap: 1rem; margin: 0">
+<ul style="display: flex; flex-wrap: wrap; gap: 2rem; margin: 0">
   {% for post in site.posts reversed %}
   <li>
     <a class="px-3 py-1" href="{{ post.url }}"><b>{{ post.title }}</b>
@@ -10,10 +10,10 @@ layout: default
         {{ post.date | date_to_string }}
       </time>
       {% if post.labels %}
-      {% for label in post.labels %}
-      <small class="text-darker px-1">·</small>
-      <small class="fw-light text-darker">{{ label }}</small>
-      {% endfor %}
+        {% for label in post.labels %}
+        <small class="text-darker px-1">·</small>
+        <small class="fw-light text-darker">{{ label }}</small>
+        {% endfor %}
       {% endif %}
     </a>
   </li>

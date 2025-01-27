@@ -1,12 +1,7 @@
 <body>
-  <header role="banner">
-    <nav role="navigation">
-      <a id="show-all-posts" href="/" class="fw-medium px-2">
-        Show all posts
-      </a>
-    </nav>
-  </header>
-  <hr>
+  {% unless page.url == "/" %}
+    {% include_cached header.html %}
+  {% endunless %}
   <main role="main">
     {{ content }}
   </main>
