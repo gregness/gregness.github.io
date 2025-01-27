@@ -11,7 +11,7 @@ And what a powerhouse at that size. Not to mention the price tag, which is quite
 
 It is the perfect budget PC for a Mac user like myself – who has been using Apple products for almost 10 years now.
 
-The M4 Mac mini is powered by 4.4GHz 10-processor cores, 10 GPU cores and 16 [Neural Engine](https://en.wikipedia.org/wiki/Neural_Engine) core. Firing on all cylinders.
+The M4 Mac mini is powered by 4.4GHz 10-processor cores, 10 GPU cores, and 16 [Neural Engine](https://en.wikipedia.org/wiki/Neural_Engine) cores. Firing on all cylinders.
 
 I’ve been using it for several days now, and the experience is very smooth. Everything is instant and snappy. Not even a hiccup.
 
