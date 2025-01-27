@@ -31,8 +31,10 @@
         </svg>
       </a>
     </div>
-    <a id="back-to-top" class="px-2 small text-darker" href="#top">
-      Back to top
-    </a>
+    {% unless page.url == "/" %}
+      <a id="back-to-top" class="px-2 small text-darker" href="#top">
+        Back to top
+      </a>
+    {% endunless %}
   </footer>
 </body>
