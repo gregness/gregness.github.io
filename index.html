@@ -11,7 +11,8 @@ layout: default
       </time>
       {% if post.labels %}
         {% for label in post.labels %}
-          <span><small class="fw-light small opacity-50" style="margin-right: 4px">•</small><small class="fw-light small opacity-50">{{ label }}</small></span>
+        <small class="opacity-50 px-1">·</small>
+        <small class="fw-light opacity-50">{{ label }}</small>
         {% endfor %}
       {% endif %}
     </a>
