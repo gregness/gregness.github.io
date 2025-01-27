@@ -4,7 +4,7 @@ labels: ["Apple", "Technology"]
 layout: post
 ---
 
-<img src="m4_mac_mini.webp" alt="M4 Mac mini" width="571" height="300" decoding="async">
+<img src="/assets/m4_mac_mini.webp" alt="M4 Mac mini" width="571" height="300" decoding="async">
 The [M4 Mac mini](https://www.apple.com/mac-mini/) fits in the palm of your hand.
 
 And what a powerhouse at that size. Not to mention the price tag, which is quite affordable.
