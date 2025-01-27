@@ -3,12 +3,17 @@ title: Figuring things out
 layout: default
 ---
 <ul style="display: flex; flex-direction: column; gap: 1rem; margin: 0">
-  {% for post in site.posts %}
+  {% for post in site.posts reversed %}
   <li>
-    <a href="{{ post.url }}"><b>{{ post.title }}</b>
-      <time datetime="{{ post.date | date: '%Y-%m-%d' }}">
+    <a class="px-3 py-1" href="{{ post.url }}"><b>{{ post.title }}</b>
+      <time class="fw-light small opacity-50" datetime="{{ post.date | date: '%Y-%m-%d' }}">
         {{ post.date | date_to_string }}
       </time>
+      {% if post.labels %}
+        {% for label in post.labels %}
+          <span><small class="fw-light small opacity-50" style="margin-right: 4px">•</small><small class="fw-light small opacity-50">{{ label }}</small></span>
+        {% endfor %}
+      {% endif %}
     </a>
   </li>
   {% endfor %}

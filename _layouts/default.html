@@ -9,41 +9,35 @@ layout: compress
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="robots" content="index,follow">
-  <meta http-equiv="Cache-Control" content="max-age=604800, public">
-  <meta http-equiv="Expires" content="Thu, 2 Feb 2025 00:00:00 GMT">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
   <style>
     @media (max-width: 480px) {
+      article>header {
+        text-align: center;
+      }
+
       article {
         img {
-          width: 100%;
-          margin: 0;
-          margin-block: 1.5rem;
-          float: unset;
+          min-width: 240px;
+          width: 50%;
+          margin: 1rem auto !important;
+          margin-bottom: 2rem !important;
+          float: unset !important;
         }
       }
     }
 
     html {
-      font-size: 16px !important;
+      height: 100%;
+      font-size: 18px !important;
       scroll-behavior: smooth;
-    }
-
-    main {
-      flex-grow: 1;
     }
 
     @media (min-width: 480px) {
       html {
         font-size: 20px !important;
-      }
-
-      article {
-        img {
-          width: 50% !important;
-          margin-left: 1rem;
-          margin-bottom: 1rem;
-          float: right;
-        }
       }
     }
 
@@ -66,29 +60,23 @@ layout: compress
     }
 
     body {
-      --system-bg: color-mix(in oklch, Canvas, oklch(25% 0 0) 5%);
-      --system-text: color-mix(in oklch, CanvasText, oklch(25% 0 0) 10%);
+      --system-bg: color-mix(in oklch, Canvas, oklch(65% 0 0) 15%);
+      --system-text: color-mix(in oklch, CanvasText, oklch(90% 0 0) 50%);
       background: var(--system-bg);
       color: var(--system-text);
       color-scheme: light dark;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       margin: 0 auto;
-      max-width: 45ch;
-      padding: 1rem 1rem 1rem 1rem;
+      max-width: 55ch;
       display: flex;
-      line-height: 1.75;
+      line-height: 1.5;
       flex-direction: column;
-      min-height: calc(100dvh - 2.5rem);
-      scroll-margin-bottom: 4rem;
-    }
-
-    small {
-      opacity: 0.625;
-      font-size: 75%;
-      font-weight: 300
+      height: 100%;
     }
 
     header[role="banner"] {
+      padding: 1rem;
+
       nav {
         align-items: baseline;
         display: flex;
@@ -101,23 +89,24 @@ layout: compress
       }
     }
 
-    article {
-      @media (prefers-color-scheme: dark) {
-        a {
-          color: rgb(158, 158, 255)
-        }
-      }
+    main {
+      padding: 1rem;
+      flex-grow: 1;
+    }
 
-      @media (prefers-color-scheme: light) {
-        a {
-          color: rgb(0, 0, 238)
-        }
-      }
+    footer {
+      padding: 1rem;
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+    }
 
+    small {
+      font-size: 80%;
     }
 
     :where(section, article)>header {
-      margin-bottom: 0.25rem;
+      margin-bottom: 1rem;
     }
 
     img {
@@ -131,18 +120,8 @@ layout: compress
       border: none;
       border-top: 1px solid light-dark(var(--system-text), var(--system-bg));
       width: 100%;
-      opacity: 0.375;
-      margin-block: 0.75rem;
-    }
-
-    time {
-      :is(a > &) {
-        display: block;
-      }
-
-      opacity: 0.625;
-      font-size: 75%;
-      font-weight: 300;
+      opacity: 0.1875;
+      margin: 0;
     }
 
     b {
@@ -153,6 +132,7 @@ layout: compress
     h1,
     h2,
     h3 {
+      font-family: "DM Sans", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
       font-weight: 600;
       text-wrap: balance;
       line-height: 1;
@@ -167,17 +147,32 @@ layout: compress
       }
     }
 
+    article {
+      img {
+        width: 50% !important;
+        margin-left: 2ch;
+        margin-bottom: 2ch;
+        float: right;
+      }
+    }
+
     a {
+      &:not([class]) {
+        color: light-dark(royalblue, cornflowerblue);
+      }
       color: inherit;
 
       :not(p)>& {
         display: block;
-        padding-inline: 0.25rem;
       }
 
       :is(p)>& {
         text-decoration: underline;
         text-decoration-thickness: 1.5px;
+        text-underline-offset: 2.5px;
+        &:hover {
+          color: color-mix(in srgb, light-dark(royalblue, cornflowerblue) 75%, white);
+        }
       }
 
       text-decoration: none;
@@ -196,9 +191,28 @@ layout: compress
       list-style: none
     }
 
-    footer {
-      display: flex;
-    }
+
+
+
+
+    .py-4 { padding-block: 1rem }
+    .py-3 { padding-block: 0.5rem }
+    .py-2 { padding-block: 0.25rem }
+    .py-1 { padding-block: 0.125rem }
+    .px-4 { padding-inline: 1rem }
+    .px-3 { padding-inline: 0.5rem }
+    .px-2 { padding-inline: 0.25rem }
+    .px-1 { padding-inline: 0.125rem }
+    .fw-bold { font-weight: 700 }
+    .fw-semibold { font-weight: 600 }
+    .fw-medium { font-weight: 500 }
+    .fw-normal { font-weight: 400 }
+    .fw-light { font-weight: 300 }
+    .opacity-50 { opacity: 0.5 }
+    .small { font-size: 80% }
+    .lh-1 { line-height: 1 }
+    .lh-md { line-height: 1.25 }
+
   </style>
   {% seo %}
 </head>
@@ -206,20 +220,8 @@ layout: compress
 <body>
   <header role="banner">
     <nav role="navigation">
-      <a href="/" style="margin-right: auto; font-size: 75%; opacity: 75%;">
+      <a href="/" class="fw-medium px-2">
         Show all posts
-      </a>
-      <a href="https://www.linkedin.com/in/ea26b0075d29530c636d6791bb5d73f4" style="margin-right: 0.75rem;line-height: 1; height: 28px; width: 28px;
-           text-decoration: none; padding: 0">
-        <img style="width: 26px; height: 26px; padding: 2px" src="linkedin.webp" loading="lazy"
-          decoding="async" alt="LinkedIn">
-      </a>
-      <a href="https://github.com/gregness" aria-label="GitHub" style="border-radius: 50%; padding: 2px; height: 28px; width: 28px;">
-        <svg height="28" width="28" aria-hidden="true" fill="light-dark(var(--system-text), var(--system-bg))" viewBox="0 0 24 24" version="1.1" width="28">
-          <path
-            d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z">
-          </path>
-        </svg>
       </a>
     </nav>
   </header>
@@ -229,8 +231,24 @@ layout: compress
   </main>
   <hr>
   <footer role="contentinfo">
-    <small style="opacity: 75%; font-weight: normal">© 2025 greg.ee</small>
-    <a href="#top" style="width: fit-content; margin-left: auto; font-size: 75%; opacity: 75%;">
+    <div style="display: flex; gap: 0.875rem">
+      <a href="https://www.linkedin.com/in/ea26b0075d29530c636d6791bb5d73f4" style="line-height: 1; height: 28px; width: 28px;
+      text-decoration: none; padding: 0">
+        <img style="width: 32px; height: 32px; padding: 4px" src="linkedin.webp" loading="lazy" decoding="async"
+          alt="LinkedIn">
+      </a>
+      <a href="https://github.com/gregness" aria-label="GitHub"
+        style="border-radius: 50%; padding: 4px; height: 32px; width: 32px;">
+        <svg height="32" width="31" aria-hidden="true" fill="light-dark(var(--system-text), var(--system-bg))"
+          viewBox="0 0 24 24" version="1.1" width="37" height="36">
+          <path
+            d="M12.5.75C6.146.75 1 5.896 1 12.25c0 5.089 3.292 9.387 7.863 10.91.575.101.79-.244.79-.546 0-.273-.014-1.178-.014-2.142-2.889.532-3.636-.704-3.866-1.35-.13-.331-.69-1.352-1.18-1.625-.402-.216-.977-.748-.014-.762.906-.014 1.553.834 1.769 1.179 1.035 1.74 2.688 1.25 3.349.948.1-.747.402-1.25.733-1.538-2.559-.287-5.232-1.279-5.232-5.678 0-1.25.445-2.285 1.178-3.09-.115-.288-.517-1.467.115-3.048 0 0 .963-.302 3.163 1.179.92-.259 1.897-.388 2.875-.388.977 0 1.955.13 2.875.388 2.2-1.495 3.162-1.179 3.162-1.179.633 1.581.23 2.76.115 3.048.733.805 1.179 1.825 1.179 3.09 0 4.413-2.688 5.39-5.247 5.678.417.36.776 1.05.776 2.128 0 1.538-.014 2.774-.014 3.162 0 .302.216.662.79.547C20.709 21.637 24 17.324 24 12.25 24 5.896 18.854.75 12.5.75Z">
+          </path>
+        </svg>
+      </a>
+    </div>
+    <small>© 2025</small>
+    <a class="fw-medium px-2" href="#top">
       Back to top
     </a>
   </footer>
