@@ -1,6 +1,6 @@
 ---
 title: Why I made this website
-labels: ["Jekyll", "Blogging"]
+labels: ["Blog", "Writing"]
 layout: post
 ---
 
