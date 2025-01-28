@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<ul style="display: flex; flex-wrap: wrap; gap: 2rem; margin: 0">
+<ul style="display: flex; flex-direction: column; gap: 2rem; margin: 0">
   {% for post in site.posts reversed %}
   <li>
     <a class="px-3 py-1" href="{{ post.url }}"><b>{{ post.title }}</b>
