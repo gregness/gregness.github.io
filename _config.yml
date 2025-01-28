@@ -3,7 +3,7 @@ baseurl: /
 title: Greg's blog
 tagline: Ramblings of a web developer
 description: I am Greg and this is my blog. It might just be what you're' looking for!
-logo: /logo.png
+logo: logo.png
 permalink: /:title
 markdown: kramdown
 highlighter: rouge
