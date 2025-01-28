@@ -1,5 +1,5 @@
 ---
-title: I bought a M4 Mac mini 
+title: I bought a M4 Mac mini
 labels: ["Apple", "Technology"]
 layout: post
 ---

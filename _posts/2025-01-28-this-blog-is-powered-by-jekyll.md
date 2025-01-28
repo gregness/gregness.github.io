@@ -1,5 +1,5 @@
 ---
-title: This blog is powered by Jekyll 🦾
+title: This blog is powered by Jekyll
 labels: ["Static Site Generators"]
 layout: post
 ---

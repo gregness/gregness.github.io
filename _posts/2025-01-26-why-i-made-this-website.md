@@ -1,5 +1,5 @@
 ---
-title: Why I made this website 🤔
+title: Why I made this website
 labels: ["Jekyll", "Blogging"]
 layout: post
 ---
