@@ -1,7 +1,7 @@
 url: "https://greg.ee"
 baseurl: /
 title: Greg's blog
-tagline: You might find something interesting here!
+tagline: Ramblings of a web developer
 description: I am Greg and this is my blog. It might just be what you're' looking for!
 logo: /logo.png
 permalink: /:title
