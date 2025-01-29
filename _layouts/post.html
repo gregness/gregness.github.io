@@ -1,8 +1,27 @@
 ---
 layout: default
 ---
-<header>
-  <h1>{{ page.title }}</h1>
-  <time class="fw-light small text-darker" datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
-</header>
-{{ content }}
+<article>
+  <header>
+    <h1>{{ page.title }}</h1>
+    <time class="fw-light small text-darker" datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
+  </header>
+  {{ content }}
+</article>
+<nav style="margin-top: 2rem;margin-inline: 0.5rem; display: flex; flex-wrap: wrap-reverse; gap: 1rem">
+  {% if page.previous %}
+  <a class="previous fw-medium px-4 py-2 text-darker"
+    style="width: fit-content; font-stretch: expanded;margin-right: auto" href="{{ page.previous.url }}">
+    <small style="font-stretch: normal; display: block" class="fw-light text-dark">Previous post</small>
+    <div>"{{ page.previous.title }}"</div>
+  </a>
+  {% endif %}
+  {% if page.next %}
+  <a class="next fw-medium px-4 py-2 text-darker" style="margin-left: auto;width: fit-content; font-stretch: expanded"
+    href="{{ page.next.url }}">
+    <small style="font-stretch: normal; display: block; width: fit-content; margin-left: auto;"
+      class="fw-light text-dark">Next post</small>
+    <div>"{{ page.next.title }}"</div>
+  </a>
+  {% endif %}
+</nav>

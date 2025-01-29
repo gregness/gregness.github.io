@@ -2,8 +2,6 @@
 title: Why I made this website
 layout: post
 ---
-
-<img src="/assets/hummingbird_and_bees.webp"  alt="Hummingbird and bees sharing a water fountain" width="450" height="300" decoding="async">
 The thought of blogging has crossed my mind many a time.
 
 I've never even taken the first step, which is usually all that's required.
@@ -18,4 +16,6 @@ Instead, I started from zero. I created a blank Jekyll blog.
 
 And voilà! What you see before your eyes is the fruit of that endeavor.
 
-I want to improve my writing. I want to be able to articulate myself in a coherent manner, be it verbally or in writing.
+I want to improve my writing.
+
+I want to be able to articulate myself in a coherent manner, be it verbally or in writing.
