@@ -1,19 +1,14 @@
 ---
 layout: default
 ---
-<ul style="display: flex; flex-direction: column; gap: 2rem; margin: 0">
+<ul style="display: flex; flex-direction: column; gap: 0.5rem; margin: 0">
   {% for post in site.posts reversed %}
   <li>
-    <a class="px-3 py-1" href="{{ post.url }}"><b>{{ post.title }}</b>
+    <a class="px-3 py-1" href="{{ post.url }}">
       <time class="fw-light small text-darker" datetime="{{ post.date | date: '%Y-%m-%d' }}">
         {{ post.date | date_to_string }}
       </time>
-      {% if post.labels %}
-        {% for label in post.labels %}
-        <small class="text-darker px-1">·</small>
-        <small class="fw-light text-darker">{{ label }}</small>
-        {% endfor %}
-      {% endif %}
+      <span class="fw-medium px-2">{{ post.title }}</span>
     </a>
   </li>
   {% endfor %}

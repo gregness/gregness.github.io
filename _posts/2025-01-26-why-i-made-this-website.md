@@ -1,6 +1,5 @@
 ---
 title: Why I made this website
-labels: ["Blog", "Writing"]
 layout: post
 ---
 
