@@ -8,12 +8,12 @@ layout: default
   </header>
   {{ content }}
 </article>
-<nav style="margin-top: 2rem; display: flex; flex-wrap: wrap-reverse; gap: 1rem">
+<nav class="page-nav" style="margin-top: 2rem; display: flex; flex-wrap: no-wrap; gap: 1rem">
   {% if page.previous %}
   <a class="previous fw-medium px-3 py-2 text-darker"
     style="width: fit-content; font-stretch: expanded;margin-right: auto" href="{{ page.previous.url }}">
     <small style="font-stretch: normal; display: block" class="fw-light text-dark">Previous post</small>
-    <div>"{{ page.previous.title }}"</div>
+    <div class="previous-title">"{{ page.previous.title }}"</div>
   </a>
   {% endif %}
   {% if page.next %}
@@ -21,7 +21,7 @@ layout: default
     href="{{ page.next.url }}">
     <small style="font-stretch: normal; display: block; width: fit-content; margin-left: auto;"
       class="fw-light text-dark">Next post</small>
-    <div>"{{ page.next.title }}"</div>
+    <div class="next-title" style="text-align: right;">"{{ page.next.title }}"</div>
   </a>
   {% endif %}
 </nav>
