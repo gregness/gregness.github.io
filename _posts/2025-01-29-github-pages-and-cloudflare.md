@@ -1,5 +1,7 @@
 ---
 title: GitHub Pages and Cloudflare
+categories: ["Software"]
+tags: ["GitHub", "Cloudflare"]
 layout: post
 ---
 In my previous post, I mentioned how Jekyll gained traction thanks to its utilization for [GitHub Pages](https://pages.github.com).

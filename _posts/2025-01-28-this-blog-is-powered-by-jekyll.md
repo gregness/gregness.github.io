@@ -1,5 +1,7 @@
 ---
 title: This blog is powered by Jekyll
+categories: ["Software"]
+tags: ["Jekyll", "Static Site Generators"]
 layout: post
 ---
 These days there is a myriad of selection between static site generators.

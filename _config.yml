@@ -1,8 +1,8 @@
 url: https://greg.ee
 baseurl: /
-title: All things web
-tagline: Tinkering with the web
-description: Web developer blog. Writing about my insights and experiences.
+title: greg.ee
+tagline: tinkering with the web
+description: web developer rambling in an overengineered blog
 logo: logo.png
 permalink: /:title
 markdown: kramdown

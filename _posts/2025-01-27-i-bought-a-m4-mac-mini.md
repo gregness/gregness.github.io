@@ -1,5 +1,7 @@
 ---
 title: I bought a M4 Mac mini
+categories: ["Hardware"]
+tags: ["Apple", "Mac mini"]
 layout: post
 ---
 The [M4 Mac mini](https://www.apple.com/mac-mini/) fits in the palm of your hand.

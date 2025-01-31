@@ -1,5 +1,7 @@
 ---
 title: Why I made this website
+category: ["Rambling"]
+tags: ["Jekyll", "Ruby"]
 layout: post
 ---
 The thought of blogging has crossed my mind many a time.
