@@ -1,0 +1,12 @@
+---
+layout: default
+title: Tags
+permalink: /tags/
+---
+<div style="display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap; padding-inline;: 0.25rem">
+  {% for tag in site.tags %}
+    <a href='/tags/{{ tag.tag | downcase | replace: " ", "" }}' class="tag text-dark" style="font-size: 100%">
+      #{{ tag.tag | downcase | replace: " ", "" }}
+    </a>
+  {% endfor %}
+</div>
