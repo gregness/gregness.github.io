@@ -1,7 +1,7 @@
 <ul style="display: flex; flex-direction: column; gap: 0.5rem; margin: 0">
   {% for post in include.posts %}
     <li>
-      <a class="lh-1" href="{{ post.url }}">
+      <a class="lh-1 post-title-list" href="{{ post.url }}">
         <span>{{ post.title }}</span>
         <time class="fw-light small text-darker" datetime="{{ post.date | date: '%Y-%m-%d' }}">
           {{ post.date | date_to_string }}

@@ -7,7 +7,8 @@ Jekyll::Hooks.register :posts, :post_write do |post|
 
   tags = post.data['tags'].reject { |t| t.empty? }
   tags.each do |tag|
-    safe_tag = tag.downcase.gsub(" ", "")
-    generate_tag_file(tag) if !all_existing_tags.include?(safe_tag)
+    File.open("_tags/#{tag}.md", "wb") do |file|
+    file << "---\nlayout: tag\ntag: #{tag}\n---\n"
+    end if !all_existing_tags.include?(tag)
   end
 end

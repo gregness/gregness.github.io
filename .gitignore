@@ -3,4 +3,4 @@
 .jekyll-cache/
 .DS_Store
 .ruby-lsp
-
+.jekyll-metadata
