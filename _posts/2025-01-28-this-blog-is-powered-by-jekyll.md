@@ -1,6 +1,5 @@
 ---
 title: This blog is powered by Jekyll
-categories: software
 tags: [jekyll, ssg, ruby, rails]
 layout: post
 ---

@@ -1,6 +1,5 @@
 ---
 title: GitHub Pages and Cloudflare
-category: software
 tags: [githubpages, cloudflare, free, optimization]
 layout: post
 ---

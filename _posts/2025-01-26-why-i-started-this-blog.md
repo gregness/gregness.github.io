@@ -1,6 +1,5 @@
 ---
 title: Why I started this blog
-category: rambling
 tags: [blogging, jekyll, hyde, writing]
 layout: post
 ---

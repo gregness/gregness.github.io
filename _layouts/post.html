@@ -3,15 +3,14 @@ layout: default
 ---
 <article>
   <header>
-    <div class="text-darker small fw-medium" style="margin-bottom: 0.25rem">{{ page.category | capitalize }}</div>
     <h1>{{ page.title }}</h1>
-    <div style="display: flex; gap: 0.5rem; align-items: baseline; margin-block-start: 0.5rem; margin-block-end: 0.75rem">
-      <time class="fw-light xs text-dark" datetime="{{ page.date }}">{{ page.date | date_to_string }}</time>
+    <div
+      style="display: flex; gap: 0.5rem; align-items: baseline; margin-block-start: 0.5rem; margin-block-end: 0.75rem">
       {% for tag in page.tags %}
-        {% assign trimmedtag = tag | downcase | replace: " ", "" %}
-        <a href="/tags/{{ trimmedtag }}" class="tag lh-1">
-          #{{ trimmedtag }}
-        </a>
+      {% assign trimmedtag = tag | downcase | replace: " ", "" %}
+      <a href="/tags/{{ trimmedtag }}" class="tag lh-1">
+        #{{ trimmedtag }}
+      </a>
       {% endfor %}
     </div>
   </header>

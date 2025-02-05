@@ -3,9 +3,9 @@ layout: default
 title: Tags
 permalink: /tags/
 ---
-<div style="display: flex; gap: 0.75rem; align-items: center; flex-wrap: wrap">
+<div style="display: flex; column-gap: 0.5rem; row-gap: 0.375rem; align-items: center; flex-wrap: wrap">
   {% for tag in site.tags %}
-    <a href='/tags/{{ tag.tag | downcase | replace: " ", "" }}' class="tag" style="font-size: 100%">
+    <a href='/tags/{{ tag.tag | downcase | replace: " ", "" }}' class="tag">
       #{{ tag.tag | downcase | replace: " ", "" }}
     </a>
   {% endfor %}

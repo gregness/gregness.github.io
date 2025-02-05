@@ -1,6 +1,5 @@
 ---
 title: I bought a M4 Mac mini
-categories: hardware
 tags: [apple, macmini, logitechmx, dellultrasharp]
 layout: post
 ---

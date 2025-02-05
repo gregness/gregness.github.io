@@ -68,9 +68,10 @@
   body > header {
     nav {
       display: flex;
-      gap: 0.75rem;
+      gap: 0.5rem;
 
       a {
+        font-size: 80%;
         &:hover {
           color: var(--link-hover-color);
         }
@@ -191,6 +192,13 @@
     color: var(--system-text-dark) !important;
   }
 
+  .text-link {
+    color: var(--link-color) !important;
+  }
+  .text-link-hover {
+    color: var(--link-hover-color) !important;
+  }
+
   .py-5 {
     padding-block: 1rem
   }
@@ -276,7 +284,7 @@
   }
 
   .tag {
-    color: var(--system-text-darker);
+    color: var(--system-text-dark);
     font-size: 70%;
     font-weight: 300;
     white-space: nowrap;

@@ -11,7 +11,7 @@ social:
   links:
     - https://github.com/gregness
 
-permalink: /:title
+permalink: pretty
 markdown: kramdown
 highlighter: rouge
 plugins:

@@ -1,7 +1,6 @@
 ---
 layout: default
 ---
-<div style="display: flex; margin-bottom: 0.75rem !important" class="fw-light text-darker"><div>#{{ page.tag | downcase | replace: " ", "" }}</div></div>
-<hr>
+<div class="small text-darker" style="margin-bottom: 0.25rem"><span>#{{ page.tag }}</span></div>
 {% assign tag_posts = site.posts | where_exp: "post", "post.tags contains page.tag" %}
 {% include posts_list.html posts=tag_posts %}
