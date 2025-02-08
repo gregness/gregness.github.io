@@ -27,9 +27,6 @@
           "name": "{{ page.author | default: site.author }}"
         },
         "datePublished": "{{ page.date | date_to_xmlschema }}",
-        {% if page.last_modified_at %}
-        "dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",
-        {% endif %}
         "publisher": {
           "@type": "Organization",
           "name": "{{ site.title }}",
@@ -38,12 +35,10 @@
             "url": "{{ site.url }}/apple-touch-icon.png"
           }
         },
-        {% if page.image %}
         "image": {
           "@type": "ImageObject",
           "url": "{{ site.url }}/apple-touch-icon.png"
         },
-        {% endif %}
         "mainEntityOfPage": {
           "@type": "WebPage",
           "@id": "{{ site.url }}{{ page.url }}"
@@ -74,9 +69,7 @@
           "@type": "Person",
           "name": "{{ site.author }}"
         },
-        {% if page.project_image %}
         "image": "{{ site.url }}/apple-touch-icon.png",
-        {% endif %}
         "datePublished": "{{ site.time | date_to_xmlschema }}"
       }
       </script>
