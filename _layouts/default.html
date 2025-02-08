@@ -1,10 +1,88 @@
----
-layout: compress
----
-
 <!DOCTYPE html>
-<html lang="en" dir="ltr" itemscope itemtype="http://schema.org/Blog" prefix="og: http://ogp.me/ns#"
-  xmlns:og="http://ogp.me/ns#">
-  {% include head.html %}
-  {% include body.html %}
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>greg.ee blog</title>
+    <meta name="title" content="greg.ee blog">
+    <meta name="description" content="tinkering with the web">
+    <meta property="og:site_name" content="greg.ee blog">
+    <meta property="og:title" content="greg.ee blog">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://greg.ee">
+    <meta property="og:description" content="tinkering with the web">
+    <meta property="og:image" content="/android-chrome-512x512.png">
+    <meta property="og:logo" content="/apple-touch-icon.png">
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "website",
+        "name": "greg.ee blog",
+        "url": "https://greg.ee",
+        "description": "tinkering with the web",
+        "about": {
+          "@type": "greg.ee blog",
+          "description": "tinkering with the web"
+        }
+      }
+    </script>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+      body {
+        margin: 0 auto;
+        padding: 1rem;
+        font-family: system-ui, sans-serif;
+        line-height: 1.5;
+        text-rendering: optimizeLegibility;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        header, main {
+          margin: 0 auto;
+          max-width: 48ch;
+          h1,
+          h2,
+          h3 {
+            text-wrap: balance;
+            margin: 0;
+            line-height: 1;
+          }
+          time, p:only-child {
+            margin-top: 0;
+            white-space: nowrap;
+            font-size: smaller;
+          }
+          ul {
+            padding: 0;
+            list-style-type: none;
+          }
+          a { color: inherit }
+        }
+        p { text-wrap: pretty }
+      }
+
+
+      @media (max-width: 640px) {
+        .back {
+          float: none !important;
+          display: block;
+          width: 14px;
+        }
+      }
+
+      .back {
+        color: inherit;
+        border-radius: 50%;
+        border: 1px solid;
+        padding-inline: 5px;
+        float: left;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    {{ content }}
+  </body>
 </html>

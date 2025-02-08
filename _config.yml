@@ -1,45 +1,7 @@
-title: notes from a curious greg
-title_separator: "-"
-tagline: Writing about the web
-description: Insights and musings from a perpetually curious mind.
+title: greg.ee © blog
+description: tinkering with the web
 url: https://greg.ee
 baseurl: /
-author: Greg Nesselmann
-logo: favicon-96x96.png
-social:
-  name: Greg Nesselmann
-  links:
-    - https://github.com/gregness
-
-permalink: pretty
+permalink: /:title
 markdown: kramdown
 highlighter: rouge
-plugins:
-  - jekyll-feed
-  - jekyll-seo-tag
-  - jekyll-sitemap
-
-feed:
-  path: feed.xml
-
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
-  ignore:
-    envs: [local]
-  blanklines: false
-  profile: false
-  startings: [html, head, body]
-
-defaults:
-- scope:
-    path: ''
-    type: tags
-  values:
-    permalink: "/tags/:title/"
-    layout: tag
-
-collections:
-  tags:
-    output: true

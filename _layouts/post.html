@@ -1,34 +1,11 @@
 ---
 layout: default
 ---
-<article>
-  <header>
-    <h1>{{ page.title }}</h1>
-    <div
-      style="display: flex; gap: 0.5rem; align-items: baseline; margin-block-start: 0.5rem; margin-block-end: 0.75rem">
-      {% for tag in page.tags %}
-      {% assign trimmedtag = tag | downcase | replace: " ", "" %}
-      <a href="/tags/{{ trimmedtag }}" class="tag lh-1">
-        #{{ trimmedtag }}
-      </a>
-      {% endfor %}
-    </div>
-  </header>
-  <hr>
-  <section>{{ content }}</section>
-</article>
-<hr last>
-<nav class="page-nav" style="margin-top: 0.25rem; display: flex; flex-wrap: no-wrap; gap: 1rem">
-  {% if page.previous %}
-  <a class="previous text-darker" style="width: fit-content; margin-right: auto" href="{{ page.previous.url }}">
-    <small style="display: block" class="fw-light text-dark">← Previous</small>
-    <div class="previous-title">"{{ page.previous.title }}"</div>
-  </a>
-  {% endif %}
-  {% if page.next %}
-  <a class="next text-darker" style="margin-left: auto;width: fit-content" href="{{ page.next.url }}">
-    <small style="display: block; width: fit-content; margin-left: auto;" class="fw-light text-dark">Next →</small>
-    <div class="next-title" style="text-align: right;">"{{ page.next.title }}"</div>
-  </a>
-  {% endif %}
-</nav>
+<a href="/" class="back">←</a>
+<header>
+  <time datetime="{{ post.date | date_to_xmlschema }}">
+    {{ page.date | date_to_long_string }}
+  </time>
+  <h1>{{ page.title }}</h1>
+</header>
+<main>{{ content }}</main>

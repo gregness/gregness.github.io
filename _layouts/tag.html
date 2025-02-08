@@ -1,6 +1,0 @@
----
-layout: default
----
-<div class="small text-darker" style="margin-bottom: 0.25rem"><span>#{{ page.tag }}</span></div>
-{% assign tag_posts = site.posts | where_exp: "post", "post.tags contains page.tag" %}
-{% include posts_list.html posts=tag_posts %}

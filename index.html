@@ -1,6 +1,17 @@
 ---
 layout: default
 ---
-<section>
-  {% include posts_list.html posts=site.posts %}
-</section>
+<header>
+  <h1>Recent posts</h1>
+</header>
+<main>
+  <ul>
+    {% for post in site.posts %}
+      <li>
+        <a href="{{ post.url }}">
+          {{ post.title }}
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</main>

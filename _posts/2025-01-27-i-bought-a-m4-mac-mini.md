@@ -1,6 +1,5 @@
 ---
 title: I bought a M4 Mac mini
-tags: [apple, macmini, logitechmx, dellultrasharp]
 layout: post
 ---
 The [M4 Mac mini](https://www.apple.com/mac-mini/) fits in the palm of your hand. And what a powerhouse at that size. Not to mention the price tag, which is quite affordable. It is the perfect budget PC for a Mac user like myself. I've been using Apple products for almost 10 years now.

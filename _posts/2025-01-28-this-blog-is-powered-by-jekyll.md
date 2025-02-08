@@ -1,6 +1,5 @@
 ---
 title: This blog is powered by Jekyll
-tags: [jekyll, ssg, ruby, rails]
 layout: post
 ---
 These days there is a myriad of selection between static site generators. [Hugo](https://gohugo.io), [Gatsby](https://www.gatsbyjs.com), [Astro](https://astro.build) and [Eleventy](https://www.11ty.dev) to name the most popular ones. But they can be considered younglings when compared to the grandfather of static site generators.
