@@ -3,27 +3,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
 
   {% if page.layout == "post" %}
-    <!-- Meta tags specific to blog posts -->
     <title>{{ page.title }} | {{ site.title }}</title>
     <meta name="description" content="{{ page.excerpt | strip_html }}">
-    <meta name="author" content="{{ page.author | default: site.author }}">
-
-    <!-- Open Graph tags for social sharing -->
+    <meta name="author" content="Greg Nesselmann">
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:description" content="{{ page.excerpt | strip_html }}">
     <meta property="og:type" content="article">
     <meta property="og:section" content="technology">
+    <meta name="author" property="og:author" content="Greg Nesselmann">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-    <meta property="og:image" content="https://greg.ee/android-chrome-512x512.png">
+    <meta name="image" property="og:image" content="https://greg.ee/android-chrome-512x512.png">
     <meta property="og:logo" content="https://greg.ee/apple-touch-icon.png">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "{{ page.title }}",
+        "image": "https://greg.ee/apple-touch-icon.png",
         "description": "{{ page.excerpt | strip_html | truncate: 160 }}",
         "author": {
           "@type": "Person",
+          "url": "https://github.com/gregness"
           "name": "{{ page.author | default: site.author }}"
         },
         "datePublished": "{{ page.date | date_to_xmlschema }}",
@@ -57,14 +57,12 @@
       {% endfor %}
     {% endif %}
   {% else %}
-    <!-- Default meta tags for other layouts -->
     <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
     <meta name="description" content="{{ page.description | default: site.description }}">
-
-    <!-- Default Open Graph tags -->
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:description" content="{{ page.description | default: site.description }}">
     <meta property="og:type" content="website">
+    <meta property="og:author" content="Greg Nesselmann">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
     <script type="application/ld+json">
       {
@@ -83,9 +81,6 @@
       }
       </script>
   {% endif %}
-
-
-  <!-- Common meta tags for all layouts -->
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
