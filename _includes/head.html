@@ -1,0 +1,95 @@
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+
+  {% if page.layout == "post" %}
+    <!-- Meta tags specific to blog posts -->
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="description" content="{{ page.excerpt | strip_html }}">
+    <meta name="author" content="{{ page.author | default: site.author }}">
+
+    <!-- Open Graph tags for social sharing -->
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.excerpt | strip_html }}">
+    <meta property="og:type" content="article">
+    <meta property="og:section" content="technology">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="og:image" content="https://greg.ee/android-chrome-512x512.png">
+    <meta property="og:logo" content="https://greg.ee/apple-touch-icon.png">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "{{ page.title }}",
+        "description": "{{ page.excerpt | strip_html | truncate: 160 }}",
+        "author": {
+          "@type": "Person",
+          "name": "{{ page.author | default: site.author }}"
+        },
+        "datePublished": "{{ page.date | date_to_xmlschema }}",
+        {% if page.last_modified_at %}
+        "dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",
+        {% endif %}
+        "publisher": {
+          "@type": "Organization",
+          "name": "{{ site.title }}",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "{{ site.url }}/apple-touch-icon.png"
+          }
+        },
+        {% if page.image %}
+        "image": {
+          "@type": "ImageObject",
+          "url": "{{ site.url }}/apple-touch-icon.png"
+        },
+        {% endif %}
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "{{ site.url }}{{ page.url }}"
+        }
+      }
+      </script>
+
+    {% if page.tags %}
+      {% for tag in page.tags %}
+        <meta property="og:tag" content="{{ tag }}">
+      {% endfor %}
+    {% endif %}
+  {% else %}
+    <!-- Default meta tags for other layouts -->
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    <meta name="description" content="{{ page.description | default: site.description }}">
+
+    <!-- Default Open Graph tags -->
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:description" content="{{ page.description | default: site.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "{{ site.title }}",
+        "description": "{{ site.description }}",
+        "creator": {
+          "@type": "Person",
+          "name": "{{ site.author }}"
+        },
+        {% if page.project_image %}
+        "image": "{{ site.url }}/apple-touch-icon.png",
+        {% endif %}
+        "datePublished": "{{ site.time | date_to_xmlschema }}"
+      }
+      </script>
+  {% endif %}
+
+
+  <!-- Common meta tags for all layouts -->
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  {% include style.html %}
+</head>

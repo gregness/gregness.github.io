@@ -5,3 +5,4 @@ baseurl: /
 permalink: /:title
 markdown: kramdown
 highlighter: rouge
+author: Greg Nesselmann

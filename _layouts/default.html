@@ -1,105 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>greg.ee blog</title>
-    <meta name="title" content="greg.ee blog">
-    <meta name="description" content="tinkering with the web">
-    <meta property="og:site_name" content="greg.ee blog">
-    <meta property="og:title" content="greg.ee blog">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://greg.ee">
-    <meta property="og:description" content="tinkering with the web">
-    <meta property="og:image" content="https://greg.ee/android-chrome-512x512.png">
-    <meta property="og:logo" content="https://greg.ee/apple-touch-icon.png">
-    <script type="application/ld+json">
-      {
-        "@context": "http://schema.org",
-        "@type": "website",
-        "name": "greg.ee blog",
-        "url": "https://greg.ee",
-        "description": "tinkering with the web",
-        "about": {
-          "@type": "greg.ee blog",
-          "description": "tinkering with the web"
-        }
-      }
-    </script>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    <style>
-      body {
-        margin: 0 auto;
-        padding: 1rem;
-        font-family: system-ui, sans-serif;
-        line-height: 1.5;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        header, main {
-          figure {
-            margin: 0;
-            padding: 0.125rem 1rem;
-          }
-          margin: 0 auto;
-          max-width: 48ch;
-          h1,
-          h2,
-          h3 {
-            text-wrap: balance;
-            margin: 0;
-            line-height: 1;
-          }
-          time, p:only-child {
-            margin-top: 0;
-            white-space: nowrap;
-            font-size: smaller;
-          }
-          ul {
-            padding: 0;
-            list-style-type: none;
-          }
-          a { color: inherit }
-          code {
-            background: #272822;
-            color: #f8f8f2;
-            padding: 0.125rem 0.25rem;
-          }
-        }
-        p {
-          text-wrap: pretty;
-          img {
-            width: 50%;
-            float: right;
-            padding: 1rem;
-          }
-        }
-      }
-
-      @media (max-width: 640px) {
-        .back {
-          float: none !important;
-          display: block;
-          width: 14px;
-        }
-      }
-
-      .back {
-        color: inherit;
-        border-radius: 50%;
-        border: 1px solid;
-        padding-inline: 5px;
-        float: left;
-        text-decoration: none;
-      }
-    </style>
-    <link href="syntax.css" rel="stylesheet">
-  </head>
+  {% include head.html %}
   <body>
     <img height="24" width="24" src="/apple-touch-icon.png" style="border: 1px solid; border-radius: 3px; float: right" alt="greg.ee logo">
+    {% if page.url == "/" %}
+      <a href="/" class="back disabled">←</a>
+    {% else %}
+      <a href="/" class="back">←</a>
+
+    {% endif %}
     {{ content }}
   </body>
 </html>

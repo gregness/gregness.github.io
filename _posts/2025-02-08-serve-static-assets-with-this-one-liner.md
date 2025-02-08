@@ -1,6 +1,7 @@
 ---
 title: Serve static assets with this one-liner
 layout: post
+tags: [macos, static assets, ruby, localhost]
 ---
 
 Disclaimer: this works out-of-the-box only on macOS. Another disclaimer: I have only tried this on macOS. It takes advantage of the pre-installed Ruby.

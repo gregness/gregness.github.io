@@ -1,0 +1,72 @@
+<style>
+  body {
+    margin: 0 auto;
+    padding: 1rem;
+    font-family: system-ui, sans-serif;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    header, main {
+      figure {
+        margin: 0;
+        padding: 0.125rem 1rem;
+      }
+      margin: 0 auto;
+      max-width: 48ch;
+      h1,
+      h2,
+      h3 {
+        text-wrap: balance;
+        margin: 0;
+        line-height: 1;
+      }
+      time, p:only-child {
+        margin-top: 0;
+        white-space: nowrap;
+        font-size: smaller;
+      }
+      ul {
+        padding: 0;
+        list-style-type: none;
+      }
+      a { color: inherit }
+      code {
+        background: #272822;
+        color: #f8f8f2;
+        padding: 0.125rem 0.25rem;
+      }
+    }
+    p {
+      text-wrap: pretty;
+      img {
+        width: 50%;
+        float: right;
+        padding: 1rem;
+      }
+    }
+  }
+
+  @media (max-width: 640px) {
+    .back {
+      float: none !important;
+      display: block;
+      width: 14px;
+    }
+  }
+
+  .back {
+    color: inherit;
+    border-radius: 50%;
+    border: 1px solid;
+    padding-inline: 5px;
+    float: left;
+    text-decoration: none;
+  }
+
+  .disabled {
+    opacity: 0.5;
+    pointer-events: none;
+  }
+</style>
+<link href="syntax.css" rel="stylesheet">
