@@ -40,6 +40,10 @@
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         header, main {
+          figure {
+            margin: 0;
+            padding: 0.125rem 1rem;
+          }
           margin: 0 auto;
           max-width: 48ch;
           h1,
@@ -59,10 +63,21 @@
             list-style-type: none;
           }
           a { color: inherit }
+          code {
+            background: #272822;
+            color: #f8f8f2;
+            padding: 0.125rem 0.25rem;
+          }
         }
-        p { text-wrap: pretty }
+        p {
+          text-wrap: pretty;
+          img {
+            width: 50%;
+            float: right;
+            padding: 1rem;
+          }
+        }
       }
-
 
       @media (max-width: 640px) {
         .back {
@@ -81,6 +96,7 @@
         text-decoration: none;
       }
     </style>
+    <link href="syntax.css" rel="stylesheet">
   </head>
   <body>
     <img height="24" width="24" src="/apple-touch-icon.png" style="border: 1px solid; border-radius: 2px; float: right" alt="greg.ee logo">
