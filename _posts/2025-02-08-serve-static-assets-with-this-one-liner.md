@@ -3,7 +3,7 @@ title: Serve static assets with this one-liner
 layout: post
 ---
 
-Little disclaimer: this works out-of-the-box only on macOS. Another disclaimer: I have only tried this on macOS.
+Disclaimer: this works out-of-the-box only on macOS. Another disclaimer: I have only tried this on macOS. It takes advantage of the pre-installed Ruby.
 
 Run this command in a directory where you want to serve static assets from:
 
@@ -11,4 +11,4 @@ Run this command in a directory where you want to serve static assets from:
 ruby -run -e httpd . -p 3000
 {% endhighlight %}
 
-Open up your favourite web browser and you should see them being served on <code>localhost</code> port 3000. This will come really handy when you're throwing around some CSS on HTML.
+Open up your favourite web browser and you should see those files being served on <code>localhost:3000</code>. I have found this really handy when I'm throwing around some CSS with HTML.
