@@ -1,96 +1,125 @@
 <style>
+  html, body {
+    height: 100%;
+  }
   body {
+    justify-content: center;
     margin: 0 auto;
-    padding: 1rem;
-    font-family: "HelveticaNeue", "Helvetica", system-ui, sans-serif;
+    min-height: 100%;
+    font-family: system-ui, sans-serif;
     line-height: 1.5;
-    width: 48ch;
+    max-width: 48ch;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
-
-    header, main {
-      /* margin: 0 auto; */
-      time {
-        margin-top: 0;
-        white-space: nowrap;
-        font-size: smaller;
-      }
-      ul {
-        padding: 0;
-        list-style-type: none;
-      }
-      code {
-        background: #272822;
-        color: #f8f8f2;
-        padding: 0.125rem 0.25rem;
-      }
-    }
-    p {
-      text-wrap: pretty;
-      img {
-        width: 50%;
-        float: right;
-        padding: 1rem;
-      }
+  }
+  @media (max-width: 480px) {
+    main {
+      border-radius: 0 !important;
     }
   }
+
+  main {
+    padding-top: 2rem;
+    padding-inline: 2rem;
+    padding-bottom: 1rem;
+    align-content: center;
+    background: whitesmoke;
+    height: fit-content;
+    border: 1px solid rgba(0, 0, 0, 0.125)
+  }
+  time {
+    margin-top: 0;
+    white-space: nowrap;
+    font-size: smaller;
+  }
+  ul {
+    padding: 0;
+    list-style-type: none;
+  }
+  code {
+    background: #272822;
+    color: #f8f8f2;
+    padding: 0.125rem 0.25rem;
+    border-radius: 0.25rem;
+  }
+  footer {
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+  p { text-wrap: pretty }
   a {
     color: inherit;
     text-underline-offset: 2px;
     text-decoration-thickness: 1px;
   }
-  main>section {
-    margin-top: 1rem;
-  }
-  body>header>nav>a {
-    font-size: large;
+  body>header {
+    padding-block: 1rem;
+    text-align: center;
   }
   h1,
   h2,
-  h3,
-  h4,
-  h5 {
+  h3 {
     text-wrap: balance;
     margin: 0;
     line-height: 1;
   }
-
-  blockquote {
-    font-family: Georgia, serif;
-    font-weight: bold;
-    font-size: large;
-    &:before {
-      content: "“";
-    } &:after {
-      content: "”"
-    }
-  }
-
-  @media (max-width: 640px) {
-    .back {
-      float: none !important;
-      display: block;
-      width: 14px;
-    }
+  h1 {
+    font-size: 1.5em;
   }
 
   figure {
     margin: 0;
     padding: 0.125rem 1rem;
-  }
-
-  address {
-    font-style: unset;
-    font-size: smaller;
+    border-radius: 0.25rem;
   }
 
   hr {
     border: none;
-    border-top: 1px dotted black;
-
+    border-top: 1px solid rgba(0, 0, 0, 0.5);
     width: 100%;
+  }
+
+  .d-flex-row {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .flex-grow-1 {
+    flex-grow: 1;
+  }
+
+  .d-flex-col {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .rounded-1 {
+    border-radius: 0.125rem;
+  }
+
+  .rounded-2 {
+    border-radius: 0.25rem;
+  }
+  .rounded-3 {
+    border-radius: 0.5rem;
+  }
+
+  .gap-1 {
+    gap: 0.25rem;
+  }
+
+  .gap-2 {
+    gap: 0.5rem;
+  }
+
+  .gap-3 {
+    gap: 0.75rem;
+  }
+
+  .gap-4 {
+    gap: 1rem;
   }
 
   .back {
