@@ -1,6 +1,7 @@
 ---
 title: This blog is powered by Jekyll
 layout: post
+tags: [static site generators, jekyll]
 ---
 These days there is a myriad of selection between static site generators. Hugo, Gatsby, Astro and Eleventy to name the most popular ones. But they can be considered younglings when compared to the grandfather of static site generators.
 

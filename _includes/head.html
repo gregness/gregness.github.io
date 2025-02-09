@@ -28,22 +28,12 @@
           "name": "{{ page.author | default: site.author }}"
         },
         "datePublished": "{{ page.date | date_to_xmlschema }}",
-        "publisher": {
-          "@type": "Organization",
-          "name": "{{ site.title }}",
-          "logo": {
-            "@type": "ImageObject",
-            "url": "{{ site.url }}/apple-touch-icon.png"
-          }
-        },
         "image": {
           "@type": "ImageObject",
           "url": "{{ site.url }}/apple-touch-icon.png"
         },
-        "mainEntityOfPage": {
-          "@type": "WebPage",
-          "@id": "{{ site.url }}{{ page.url }}"
-        }
+        "url": "{{ site.url }}{{ page.url }}",
+        "keywords": "{{ page.tags | join ',' }}""
       }
       </script>
 
@@ -63,15 +53,13 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "CreativeWork",
-        "name": "{{ site.title }}",
-        "description": "{{ site.description }}",
-        "creator": {
+        "@type": "WebSite",
+        "name": "Greg's blog",
+        "url": "https://greg.ee/",
+        "author": {
           "@type": "Person",
           "name": "{{ site.author }}"
-        },
-        "image": "{{ site.url }}/apple-touch-icon.png",
-        "datePublished": "{{ site.time | date_to_xmlschema }}"
+        }
       }
       </script>
   {% endif %}

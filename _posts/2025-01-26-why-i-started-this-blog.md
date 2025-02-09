@@ -1,6 +1,7 @@
 ---
 title: Why I started this blog
 layout: post
+tags: [blogging, jekyll]
 ---
 I've wanted to start blogging for some time now. But I've never taken the first step – which is usually enough to get you started. This time is different because I actually got this blog up and running. How did this happen?
 

@@ -1,16 +1,10 @@
 <!DOCTYPE html>
-<html lang="en"       xmlns="http://www.w3.org/1999/xhtml"
-xmlns:og="http://ogp.me/ns#"
-xmlns:article="http://ogp.me/ns/article#">
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#">
   {% include head.html %}
   <body>
-    <img height="24" width="24" src="/apple-touch-icon.png" style="border: 1px solid; border-radius: 3px; float: right" alt="greg.ee logo">
-    {% if page.url == "/" %}
-      <a href="/" class="back disabled">←</a>
-    {% else %}
-      <a href="/" class="back">←</a>
-
-    {% endif %}
-    {{ content }}
+    {% include header.html %}
+     <main>
+       {{ content }}
+     </main>
   </body>
 </html>

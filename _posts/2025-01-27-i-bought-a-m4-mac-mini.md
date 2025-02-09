@@ -1,6 +1,7 @@
 ---
 title: I bought a M4 Mac mini
 layout: post
+tags: [apple, mac mini m4]
 ---
 The M4 Mac mini fits in the palm of your hand. And what a powerhouse at that size. Not to mention the price tag, which is quite affordable. It is the perfect budget PC for a Mac user like myself. I've been using Apple products for almost 10 years now.
 

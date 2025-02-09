@@ -4,24 +4,16 @@
     padding: 1rem;
     font-family: system-ui, sans-serif;
     line-height: 1.5;
+    max-width: 48ch;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+
+
     header, main {
-      figure {
-        margin: 0;
-        padding: 0.125rem 1rem;
-      }
-      margin: 0 auto;
-      max-width: 48ch;
-      h1,
-      h2,
-      h3 {
-        text-wrap: balance;
-        margin: 0;
-        line-height: 1;
-      }
-      time, p:only-child {
+
+      /* margin: 0 auto; */
+      time {
         margin-top: 0;
         white-space: nowrap;
         font-size: smaller;
@@ -47,6 +39,19 @@
     }
   }
 
+  body>header>nav>a {
+    font-size: large;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    text-wrap: balance;
+    margin: 0;
+    line-height: 1;
+  }
+
   @media (max-width: 640px) {
     .back {
       float: none !important;
@@ -55,7 +60,27 @@
     }
   }
 
+  figure {
+    margin: 0;
+    padding: 0.125rem 1rem;
+  }
+
+  address {
+    font-style: unset;
+    font-size: smaller;
+  }
+
+  hr {
+    border: none;
+    border-top: 1px dotted black;
+
+    width: 100%;
+  }
+
   .back {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
     color: inherit;
     border-radius: 50%;
     border: 1px solid;

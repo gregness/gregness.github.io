@@ -1,11 +1,9 @@
 ---
 layout: default
 ---
-<header>
-  <h1>Recent posts</h1>
-</header>
-<main>
-  <ul>
+<section style="margin-top: 1rem">
+  <header><h1>Recent posts</h1></header>
+  <ul style="display: flex; flex-direction: column; gap: 0.375rem;">
     {% for post in site.posts %}
       <li>
         <a href="{{ post.url }}">
@@ -14,4 +12,4 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-</main>
+</section>
