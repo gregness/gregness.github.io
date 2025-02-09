@@ -3,10 +3,9 @@ title: Serve static assets with one line
 layout: post
 tags: [macos, static assets, ruby, localhost]
 ---
+I'll show you how to serve static assets with just one line. Granted that you're using macOS.
 
-Disclaimer: this works out-of-the-box only on macOS. Another disclaimer: I have only tried this on macOS.
-
-It takes advantage of the pre-installed Ruby. Run this command in a directory where you want to serve static assets from:
+The one-liner takes advantage of the pre-installed Ruby on macOS. Ruby is included by default in macOS releases since at least El Capitan. Run this command in a directory where you want to serve static assets from:
 
 {% highlight ruby %}
 ruby -run -e httpd . -p 3000
