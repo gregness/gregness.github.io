@@ -1,5 +1,5 @@
-title: greg's microblog
-description: Tinkering with the web. Pragmatic and curious. Constantly improving and sharing knowledge along the way.
+title: greg's blog
+description: tinkering with the web and writing about anything worthwhile
 url: https://greg.ee
 baseurl: /
 permalink: /:title
