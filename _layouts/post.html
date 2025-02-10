@@ -2,7 +2,7 @@
 layout: default
 ---
 <article>
-  <header>
+  <header class="text-center" style="margin-bottom: 1.5rem">
     <!-- <time datetime="{{ page.date | date_to_xmlschema}}" class="opacity-50">
       {{ page.date | date_to_long_string: "ordinal" }}
     </time> -->
@@ -10,10 +10,8 @@ layout: default
   </header>
   {{ content }}
 </article>
-<hr>
-<h3 style="margin-top: 1.75rem;">Read other posts</h3>
-{% include posts_list.html posts=site.posts skip_post=page.title %}
-<nav class="d-flex-col gap-1" style="margin-top: 0.5rem">
+<nav class="d-flex-col gap-1" style="margin-top: 2rem">
+  <a href="/" class="text-center" style="text-decoration-style: wavy; text-underline-offset: 3px">Back to all posts</a>
   <!-- <a href="{% if page.next.url %}{{ page.next.url }}{% endif %}" class="{% if page.next.url %}{% else %}disabled{% endif %}">
     {{ page.next.title }}
   </a>
