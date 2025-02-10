@@ -1,10 +1,11 @@
-<ul class="d-flex-col gap-1">
+<ul class="d-flex-col gap-2">
   {% for post in include.posts %}
-    {% if post.title != include.skip_post | default: ""%}
+    {% if post.title != include.skip_post | default: "" %}
     <li>
       <a href="{{ post.url }}">
         {{ post.title }}
-      </a>
+      </a>{% if post.title == site.posts.first.title %}<small style="margin-left: 1ch; background: firebrick; padding: 2px 4px; border-radius: 0.125rem; font-size: small; line-height: 1; font-weight: 500;">Latest post</small>{% endif %}
+
       <!-- {{ post.content.size }} -->
     </li>
     {% endif %}

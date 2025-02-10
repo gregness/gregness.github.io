@@ -1,23 +1,12 @@
 <!DOCTYPE html>
-<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#">
-  {% include head.html %}
-  <body class="d-flex-col">
-    <header>
-      <section class="d-flex-row gap-4" style="align-items: center; margin-bottom: 1rem">
-        <img src="/favicon.webp" height="64">
-        <div>
-          <h1 style="font-size: 2rem">greg's blog</h1>
-          <p class="opacity-50" style="margin-top: 0.5rem;">I'm definitely not an essayist</p>
-        </div>
-      </section>
-      <hr>
-    </header>
-    <main role="main">
-      {{ content }}
-    </main>
-    <!-- <footer role="contentinfo" class="text-center">
-      <hr>
-      <time class="opacity-25">Last updated at {{  site.time | date_to_xmlschema  }}</time>
-    </footer> -->
-  </body>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#"
+  xmlns:article="http://ogp.me/ns/article#">
+{% include head.html %}
+
+<body class="d-flex-col">
+  {% include header.html %}
+  <main role="main">
+    {{ content }}
+  </main>
+</body>
 </html>
