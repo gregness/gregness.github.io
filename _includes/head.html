@@ -71,15 +71,18 @@
           "name": "Greg Nesselmann"
         },
         "publisher": {
-          "@type": "Person",
-          "name": "Greg Nesselmann",
-          "@id": "https://greg.ee/#publisher"
+          "@type": "Organization",
+          "name": "Greg's microblog",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://greg.ee/apple-touch-icon.png"
+          }
         },
         "mainEntityOfPage": {
           "@type": "WebPage",
           "@id": "https://greg.ee"
         },
-        "dateModified": "{{ site.time | date_to_xmlschema }}"
+        "datePublished": "{{ site.time | date_to_xmlschema }}"
       }
       </script>
   {% endif %}
