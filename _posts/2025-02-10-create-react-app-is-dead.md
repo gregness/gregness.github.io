@@ -1,5 +1,5 @@
 ---
-title:
+title: Create React App is dead
 layout: post
 tags: [react, cra, create react app, vite, nextjs, remix]
 ---

@@ -1,4 +1,5 @@
 ---
+title: Cloudflare free plan is generous
 layout: post
 tags: [cloudflare, free, performance, dns]
 ---

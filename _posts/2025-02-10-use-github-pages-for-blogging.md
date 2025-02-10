@@ -1,5 +1,5 @@
 ---
-title:
+title: Use GitHub Pages for blogging
 layout: post
 tags: [github, github pages]
 ---
