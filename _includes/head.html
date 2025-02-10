@@ -61,14 +61,25 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Blog",
+        "@type": ["Blog", "WebSite"],
         "name": "Greg's microblog",
         "description": "Tinkering with the web. Pragmatic and curious. Constantly improving and sharing knowledge along the way.",
         "url": "https://greg.ee/",
         "author": {
           "@type": "Person",
+          "@id": "https://greg.ee/#author",
           "name": "Greg Nesselmann"
-        }
+        },
+        "publisher": {
+          "@type": "Person",
+          "name": "Greg Nesselmann",
+          "@id": "https://greg.ee/#publisher"
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://greg.ee"
+        },
+        "dateModified": "{{ site.time | date_to_xmlschema }}"
       }
       </script>
   {% endif %}
