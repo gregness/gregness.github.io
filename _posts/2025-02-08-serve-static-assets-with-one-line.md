@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: [macos, static assets, ruby, localhost]
+tags: [macos, static assets, ruby, localhost, server]
 ---
 I'll show you how to serve static assets with just one line on the command line. Granted you are using [macOS](https://www.apple.com/macos).
 
