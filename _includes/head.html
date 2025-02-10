@@ -22,11 +22,14 @@
       {
         "@context": "https://schema.org",
         "@type": "BlogPosting",
+        "@id": "https://greg.ee/{{ page.url }}",
         "headline": "{{ page.title }}",
-        "description": "{{ page.excerpt | strip_html }}",
+        "isPartOf": {
+          "@id": "https://greg.ee/#website"
+        },
         "author": {
           "@type": "Person",
-          "url": "https://github.com/gregness",
+          "@id": "https://greg.ee/#greg",
           "name": "{{ page.author | default: site.author }}"
         },
         "datePublished": "{{ page.date | date_to_xmlschema }}",
@@ -58,8 +61,10 @@
       {
         "@context": "https://schema.org",
         "@type": "WebSite",
+        "@id": "https://greg.ee/#website",
+        "url": "https://greg.ee/",
         "name": "Greg's microblog",
-        "url": "https://greg.ee/"
+        "description": "Tinkering with the web. Pragmatic and curious. Constantly improving and sharing knowledge along the way."
       }
       </script>
   {% endif %}
