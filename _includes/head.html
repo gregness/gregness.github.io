@@ -4,7 +4,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
-  <meta name="apple-mobile-web-app-title" content="Greg's microblog">
+  <meta name="apple-mobile-web-app-title" content="greg's blog">
   {% if page.layout == "post" %}
     <title>{{ page.title }} | {{ site.title }}</title>
     <meta name="description" content="{{ page.excerpt | strip_html }}">
@@ -12,7 +12,7 @@
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:description" content="{{ page.excerpt | strip_html }}">
     <meta property="og:type" content="article">
-    <meta property="og:image" content="https://greg.ee/social-media.png">
+    <meta property="og:image" content="https://greg.ee/social-media.webp">
     <meta property="og:logo" content="https://greg.ee/apple-touch-icon.png">
     <meta property="article:published_time" content="{{ page.date }}">
     <meta property="og:section" content="technology">
@@ -36,7 +36,7 @@
         "datePublished": "{{ page.date | date_to_xmlschema }}",
         "image": {
           "@type": "ImageObject",
-          "url": "{{ site.url }}/social-media.png"
+          "url": "{{ site.url }}/social-media.webp"
         },
         "url": "{{ site.url }}{{ page.url }}",
         "keywords": "{{ page.tags | join ',' }}"
@@ -53,7 +53,10 @@
     <meta name="description" content="{{ page.description | default: site.description }}">
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:description" content="{{ page.description | default: site.description }}">
-    <meta property="og:image" content="https://greg.ee/social-media.png">
+    <meta property="og:image" content="https://greg.ee/social-media.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="627">
+    <meta property="og:image:alt" content="tinkering with the web">
     <meta property="og:logo" content="https://greg.ee/apple-touch-icon.png">
     <meta property="og:type" content="website">
     <meta property="og:author" content="Greg Nesselmann">
@@ -62,7 +65,7 @@
       {
         "@context": "https://schema.org",
         "@type": ["Blog", "WebSite"],
-        "name": "Greg's microblog",
+        "name": "greg's blog",
         "description": "Tinkering with the web. Pragmatic and curious. Constantly improving and sharing knowledge along the way.",
         "url": "https://greg.ee/",
         "author": {
@@ -72,7 +75,7 @@
         },
         "publisher": {
           "@type": "Organization",
-          "name": "Greg's microblog",
+          "name": "greg's blog",
           "logo": {
             "@type": "ImageObject",
             "url": "https://greg.ee/apple-touch-icon.png"
@@ -88,8 +91,9 @@
   {% endif %}
   <link rel="canonical" href="{{ site.url }}{{ page.url }}">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/webp" href="/favicon.webp" sizes="128x128">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="icon" type="image/x-icon" href="/favicon.ico">
   <link rel="manifest" href="/site.webmanifest">
   {% include style.html %}

@@ -2,8 +2,19 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#">
   {% include head.html %}
   <body class="d-flex-col">
+    <header>
+      <section class="text-center">
+        <h1>greg's blog</h1>
+        <p class="small opacity-50">I don't like rambling and I'm definitely not an essayist</p>
+        <hr>
+      </section>
+    </header>
     <main role="main">
       {{ content }}
     </main>
+    <hr>
+    <footer role="contentinfo" class="text-center">
+      <time class="opacity-25">Last updated at {{  site.time | date_to_xmlschema  }}</time>
+    </footer>
   </body>
 </html>

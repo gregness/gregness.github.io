@@ -1,5 +1,4 @@
 ---
-title: Serve static assets with one line
 layout: post
 tags: [macos, static assets, ruby, localhost]
 ---

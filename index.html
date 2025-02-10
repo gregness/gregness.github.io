@@ -2,8 +2,6 @@
 layout: default
 ---
 <section>
-  <h1>Greg's microblog</h1>
-  <p>I don't like rambling and I'm definitely not an essayist. Therefore I will limit my posts to 140–280 characters. Limitations encourage creativity. Less is more.</p>
+  <h3>List of posts</h3>
+  {% include posts_list.html posts=site.posts %}
 </section>
-<h3 style="margin-top: 1.5rem;">List of posts</h3>
-{% include posts_list.html posts=site.posts %}
