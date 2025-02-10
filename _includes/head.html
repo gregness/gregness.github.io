@@ -1,4 +1,5 @@
 <head>
+  <meta name="robots" content="index, follow">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <meta name="mobile-web-app-capable" content="yes">
@@ -11,12 +12,12 @@
     <meta property="og:title" content="{{ page.title }}">
     <meta property="og:description" content="{{ page.excerpt | strip_html }}">
     <meta property="og:type" content="article">
+    <meta property="og:image" content="https://greg.ee/social-media.png">
+    <meta property="og:logo" content="https://greg.ee/apple-touch-icon.png">
     <meta property="article:published_time" content="{{ page.date }}">
     <meta property="og:section" content="technology">
-    <meta name="author" property="og:author" content="Greg Nesselmann">
+    <meta property="og:author" content="Greg Nesselmann">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-    <meta name="image" property="og:image" content="https://greg.ee/social-media.png">
-    <meta property="og:logo" content="https://greg.ee/apple-touch-icon.png">
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -48,6 +49,8 @@
     <meta name="description" content="{{ page.description | default: site.description }}">
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:description" content="{{ page.description | default: site.description }}">
+    <meta property="og:image" content="https://greg.ee/social-media.png">
+    <meta property="og:logo" content="https://greg.ee/apple-touch-icon.png">
     <meta property="og:type" content="website">
     <meta property="og:author" content="Greg Nesselmann">
     <meta property="og:url" content="{{ site.url }}{{ page.url }}">
