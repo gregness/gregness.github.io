@@ -2,9 +2,12 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#">
   {% include head.html %}
   <body class="d-flex-col">
-     <main role="main">
-       {{ content }}
-      </main>
-      {% include footer.html %}
+    <main role="main">
+      {{ content }}
+    </main>
+    <footer class="opacity-50" >
+      <small>Last updated at</small>
+      <time style="display: inline" datetime="{{ site.time | date_to_xmlschema }}">{{ site.time | date_to_xmlschema }}</time>
+    </footer>
   </body>
 </html>

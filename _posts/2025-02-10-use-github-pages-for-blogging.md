@@ -3,8 +3,6 @@ title:
 layout: post
 tags: [github, github pages]
 ---
-[GitHub Pages](https://pages.github.com/) is a great way to get started with a blog because it's free and simple.
+[GitHub Pages](https://pages.github.com/) is a great way to get started with a blog. It's free, simple and powered by [Jekyll](https://jekyllrb.com/) static site generator.
 
-It's powered by [Jekyll](https://jekyllrb.com/), which is a great static site generator that's been around for a while.
-
-Custom domains are also supported and that's why I use it.
+Custom domains are also supported. That and Jekyll is why I use GitHub Pages to power my microblog here.
