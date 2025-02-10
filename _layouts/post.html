@@ -2,11 +2,24 @@
 layout: default
 ---
 <article>
-  <header style="margin-bottom: 1rem">
-    <time datetime="{{ post.date | date_to_xmlschema }}">
-      {{ page.date | date_to_long_string: "ordinal" }}
-    </time>
-    <h1 style="margin-bottom: 0.375rem">{{ page.title }}</h1>
-  </header>
+  <time datetime="{{ page.date | date_to_xmlschema}}" class="text-center opacity-50">
+    {{ page.date | date_to_long_string: "ordinal" }}
+  </time>
+  <h1 class="text-center" style="margin-bottom: 1.5rem">{{ page.title }}</h1>
   {{ content }}
 </article>
+<hr>
+<nav class="d-flex-row" style="justify-content: space-between">
+  <a href="{% if page.next.url %}{{ page.next.url }}{% endif %}" style="font-size: small" class="{% if page.next.url %}{% else %}disabled{% endif %}">
+    Newer
+  </a>
+
+  <a href="/" style="font-size: small">
+    Back to all posts
+  </a>
+
+  <a href="{% if page.previous.url %} {{ page.previous.url }} {% endif %}" style="font-size: small" class="{% if page.previous.url %}{% else %}disabled{% endif %}">
+    Older
+  </a>
+
+</nav>

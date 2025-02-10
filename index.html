@@ -1,16 +1,8 @@
 ---
 layout: default
 ---
-<section>
-  <h1>Greg's blog</h1>
-  <p style="margin-top: 0.5rem; font-size: smaller;">I don't like rambling so my posts are short and practical.</p>
-  <ul style="display: flex; flex-direction: column; gap: 0.375rem;">
-    {% for post in site.posts %}
-      <li>
-        <a href="{{ post.url }}">
-          {{ post.title }}
-        </a>
-      </li>
-    {% endfor %}
-  </ul>
+<section class="text-center">
+  <h1>Greg's microblog</h1>
+  <p style="margin-top: 0.75rem; font-size: smaller;" class="opacity-75">I don't like rambling and I'm definitely not an essayist. Therefore I will limit my posts to 140–280 characters. Limitations encourage creativity. </p>
 </section>
+{% include posts_list.html  %}

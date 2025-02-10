@@ -1,0 +1,10 @@
+<ul style="display: flex; flex-direction: column; gap: 0.5rem" class="text-center">
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">
+        {{ post.title }}
+      </a>
+      <!-- {{ post.content.size }} -->
+    </li>
+  {% endfor %}
+</ul>

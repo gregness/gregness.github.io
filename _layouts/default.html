@@ -2,12 +2,9 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#">
   {% include head.html %}
   <body class="d-flex-col">
-    {% include header.html %}
-     <main class="rounded-2">
+     <main role="main">
        {{ content }}
       </main>
-      <footer class="d-flex-col">
-        <small style="color: rgba(0, 0, 0, 0.25)">{{ site.time }}</small>
-      </footer>
+      {% include footer.html %}
   </body>
 </html>
