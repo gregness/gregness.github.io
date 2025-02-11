@@ -7,7 +7,7 @@ If you have meddled with SEO you probably know what [schema](https://schema.org)
 
 It's no joke getting all of them correct. And I didn't even mention [open graph](https://ogp.me), which is probably the most used. You just have to have to enter some meta tags.
 
-Luckily there are some tools to check your markup. The most important one is [Rich Results Test](https://search.google.com/test/rich-results). You can enter a URL and Google will validate whether your markup translates into rich results or not.
+The most important tool is [Rich Results Test](https://search.google.com/test/rich-results). You can enter a URL and Google will validate whether your markup translates into rich results or not.
 
 To test open graph markup for blog posts, there is [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector). You have to be logged in to LinkedIn for that on.
 

@@ -4,14 +4,9 @@
     --white: rgb(245, 245, 245);
     --off-white: rgb(225, 225, 225);
   }
-  html {
-    font-size: 16px;
-  }
-  html, body, main {
-    height: 100%;
-  }
   body {
     background: var(--black);
+    padding: 2rem;
     color: var(--white);
     margin: 0 auto;
     font-family: system-ui, sans-serif;
@@ -26,15 +21,9 @@
     margin-bottom: 1rem;
   }
   article {
-    padding-inline: 2rem;
     :not(header > a) {
       color: inherit
     }
-  }
-  main {
-    flex-grow: 1;
-    margin: 0 auto;
-    height: fit-content;
   }
   time {
     margin-top: 0;
@@ -55,13 +44,9 @@
     padding: 0.25rem 0.5rem;
     border-radius: 0.25rem;
     font-size: 0.75rem;
-    margin-left: 4px;
   }
   .small {
-    font-size: small;
-  }
-  .smaller {
-    font-size: smaller;
+    font-size: 14px;
   }
   p {
     color: var(--off-white) !important;
@@ -75,23 +60,19 @@
     text-underline-offset: 3px;
     text-decoration-thickness: 1px;
     cursor: pointer;
-    transition: all 0.2s linear;
+    transition: all 0.1s linear;
     &:hover {
-      filter: brightness(0.5)
-    } &:active {
-      filter: brightness(1);
+      filter: brightness(0.75)
     }
   }
+
   body>header {
-    padding-top: 0.5rem;
-    justify-items: center;
-    padding-inline: 1rem;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
     a {
       color: inherit;
       text-decoration: none;
       font-weight: 600;
-      font-size: large;
     }
   }
   h1,
@@ -304,6 +285,9 @@
   }
   .highlight .si {
     color: #cc6633;
+  }
+  .font-serif {
+    font-family: Georgia, 'Times New Roman', Times, serif;
   }
   .highlight .se {
     color: #cc6633;
