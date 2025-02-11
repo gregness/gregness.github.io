@@ -1,6 +1,7 @@
 {
   "name": "greg's blog",
   "short_name": "greg's blog",
+  "id": "/",
   "start_url": "/",  
   "icons": [
     {
