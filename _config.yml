@@ -16,7 +16,12 @@ author:
   name: Greg Nesselmann
   url: https://www.linkedin.com/in/gregnesselmann
 highlighter: rouge
-author: Greg Nesselmann
 plugins:
   - jekyll-sitemap
   - jeyll-seo-tag
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /social-media.webp
