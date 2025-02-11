@@ -8,3 +8,4 @@ highlighter: rouge
 author: Greg Nesselmann
 plugins:
   - jekyll-sitemap
+  - jeyll-seo-tag
