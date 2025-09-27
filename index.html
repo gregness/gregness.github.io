@@ -8,14 +8,14 @@
   <meta name="description" content="i have no special talent. i am only passionately curious.">
   <style>
     :root {
-      --background: snow;
+      --background: white;
       --color: black;
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
         --background: black;
-        --color: snow;
+        --color: white;
       }
     }
 
@@ -34,13 +34,13 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      /* pointer-events: none;
+      pointer-events: none;
       user-select: none;
-      -webkit-user-select: none; */
+      -webkit-user-select: none;
     }
 
     main {
-      max-width: 400px;
+      max-width: 320px;
       display: flex;
       flex-direction: column;
       padding: 1.5rem;
@@ -55,22 +55,6 @@
       text-underline-offset: 0.125rem;
     }
 
-    time {
-      /* font-weight: bold; */
-      /* text-decoration: underline; */
-      text-underline-offset: 0.125rem;
-      font-size: 11px;
-    }
-
-    article {
-      display: flex;
-      flex-direction: column;
-
-      header~p {
-        margin-block: 0.25rem;
-      }
-    }
-
     p {
       margin-block: 1rem;
     }
@@ -79,19 +63,40 @@
       margin: 0;
     }
 
-    time {
-      color: dimgray;
-      font-size: smaller;
-      cursor: pointer;
-
-      &:hover {
-        text-decoration: underline;
-      }
+    #star {
+      background: linear-gradient(45deg, #4f46e5, #06b6d4, #10b981);
+      background-size: 200% 200%;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      animation: gradient-cycle 6s infinite linear;
     }
 
-    footer {
-      margin-top: 2rem;
-      margin-bottom: 1rem;
+    @keyframes gradient-cycle {
+      0% {
+        background-position: 0% 50%;
+        filter: hue-rotate(0deg);
+      }
+
+      25% {
+        background-position: 50% 50%;
+        filter: hue-rotate(90deg);
+      }
+
+      50% {
+        background-position: 100% 50%;
+        filter: hue-rotate(180deg);
+      }
+
+      75% {
+        background-position: 50% 50%;
+        filter: hue-rotate(270deg);
+      }
+
+      100% {
+        background-position: 0% 50%;
+        filter: hue-rotate(360deg);
+      }
     }
   </style>
 </head>
@@ -100,30 +105,23 @@
   <header>
     <hgroup>
       <h1 hidden>collection of philosophical & technical insights</h1>
-      <p style="color: cyan; font-size: 8rem">✦</p>
+      <h2 id="star" style="color: cyan; font-size: 6rem; margin: 0">✦</h2>
     </hgroup>
   </header>
   <main>
     <article>
       <header>
-        <time datetime="2025-09-26">26.09.2025</time>
+        <time datetime="2025-09-26" hidden>26.09.2025</time>
       </header>
-      <p>I have no special talents. I am only passionately curious.</p>
-      <small style="color: darkcyan">Albert Einstein</small>
+      <p>i have no special talents. i am only passionately curious</p>
     </article>
     <article>
       <header>
-        <time datetime="2025-09-27">27.09.2025</time>
+        <time datetime="2025-09-27" hidden>27.09.2025</time>
       </header>
-      <p>The meaning of life is to give life a meaning.</p>
-      <small style="color: darkcyan">Viktor E. Frankl</small>
+      <p>the meaning of life is to give life a meaning</p>
     </article>
   </main>
-  <footer style="text-align: center">
-    <small style="color: dimgray">Artisanally crafted by Greg</small><br>
-    <small style="color: dimgray">Infrastructure provided by GitHub</small><br>
-    <small style="color: dimgray">Wisdom imparted by great minds</small>
-  </footer>
 </body>
 
 </html>
