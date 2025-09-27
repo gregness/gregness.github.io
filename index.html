@@ -1,41 +1,129 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
-  <link rel="shortcut icon" href="/favicon.ico" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <title>worst blog</title>
+  <meta name="description" content="i have no special talent. i am only passionately curious.">
   <style>
-    html,
-    body {
-      height: 100dvh;
-      width: 100dvh;
-      margin: 0 auto;
-      font-family: system-ui, sans-serif;
-      font-size: 18px;
+    :root {
+      --background: snow;
+      --color: black;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --background: black;
+        --color: snow;
+      }
+    }
+
+    html {
+      height: 100%;
+      width: 100%;
+      font-family: monospace;
     }
 
     body {
-      max-width: 480px;
-      justify-items: center;
-      align-content: center;
-      text-align: center;
+      margin: 0;
+      height: 100%;
+      display: flex;
+      background: var(--background);
+      color: var(--color);
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      /* pointer-events: none;
+      user-select: none;
+      -webkit-user-select: none; */
     }
 
-    h1 {
-      font-variant: small-caps;
-      font-stretch: ultra-expanded;
+    main {
+      max-width: 400px;
+      display: flex;
+      flex-direction: column;
+      padding: 1.5rem;
+      gap: 2rem;
+    }
+
+    a {
+      color: mediumslateblue;
+      font-weight: bold;
+      text-decoration-thickness: 0.125rem !important;
+      text-decoration: underline;
+      text-underline-offset: 0.125rem;
+    }
+
+    time {
+      /* font-weight: bold; */
+      /* text-decoration: underline; */
+      text-underline-offset: 0.125rem;
+      font-size: 11px;
+    }
+
+    article {
+      display: flex;
+      flex-direction: column;
+
+      header~p {
+        margin-block: 0.25rem;
+      }
+    }
+
+    p {
+      margin-block: 1rem;
+    }
+
+    article > p {
+      margin: 0;
+    }
+
+    time {
+      color: dimgray;
+      font-size: smaller;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+
+    footer {
+      margin-top: 2rem;
+      margin-bottom: 1rem;
     }
   </style>
 </head>
 
 <body>
+  <header>
+    <hgroup>
+      <h1 hidden>collection of philosophical & technical insights</h1>
+      <p style="color: cyan; font-size: 8rem">✦</p>
+    </hgroup>
+  </header>
   <main>
-    <h1>Tabula rasa</h1>
+    <article>
+      <header>
+        <time datetime="2025-09-26">26.09.2025</time>
+      </header>
+      <p>I have no special talents. I am only passionately curious.</p>
+      <small style="color: darkcyan">Albert Einstein</small>
+    </article>
+    <article>
+      <header>
+        <time datetime="2025-09-27">27.09.2025</time>
+      </header>
+      <p>The meaning of life is to give life a meaning.</p>
+      <small style="color: darkcyan">Viktor E. Frankl</small>
+    </article>
   </main>
+  <footer style="text-align: center">
+    <small style="color: dimgray">Artisanally crafted by Greg</small><br>
+    <small style="color: dimgray">Infrastructure provided by GitHub</small><br>
+    <small style="color: dimgray">Wisdom imparted by great minds</small>
+  </footer>
 </body>
-
 
 </html>
