@@ -1,127 +1,30 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>worst blog</title>
-  <meta name="description" content="i have no special talent. i am only passionately curious.">
-  <style>
-    :root {
-      --background: white;
-      --color: black;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --background: black;
-        --color: white;
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Digital Garden</title>
+    <meta name="description" content="Simplicity is the ultimate sophistication.">
+    <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>&lt;text y=%22.9em%22 font-size=%2290%22>🪴</text></svg>">
+    <style>
+      html {
+        font-family: Helvetica;
+        -webkit-font-smoothing: antialiased;
       }
-    }
-
-    html {
-      height: 100%;
-      width: 100%;
-      font-family: monospace;
-    }
-
-    body {
-      margin: 0;
-      height: 100%;
-      display: flex;
-      background: var(--background);
-      color: var(--color);
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      pointer-events: none;
-      user-select: none;
-      -webkit-user-select: none;
-    }
-
-    main {
-      max-width: 320px;
-      display: flex;
-      flex-direction: column;
-      padding: 1.5rem;
-      gap: 2rem;
-    }
-
-    a {
-      color: mediumslateblue;
-      font-weight: bold;
-      text-decoration-thickness: 0.125rem !important;
-      text-decoration: underline;
-      text-underline-offset: 0.125rem;
-    }
-
-    p {
-      margin-block: 1rem;
-    }
-
-    article > p {
-      margin: 0;
-    }
-
-    #star {
-      background: linear-gradient(45deg, #4f46e5, #06b6d4, #10b981);
-      background-size: 200% 200%;
-      background-clip: text;
-      -webkit-background-clip: text;
-      color: transparent;
-      animation: gradient-cycle 6s infinite linear;
-    }
-
-    @keyframes gradient-cycle {
-      0% {
-        background-position: 0% 50%;
-        filter: hue-rotate(0deg);
-      }
-
-      25% {
-        background-position: 50% 50%;
-        filter: hue-rotate(90deg);
-      }
-
-      50% {
-        background-position: 100% 50%;
-        filter: hue-rotate(180deg);
-      }
-
-      75% {
-        background-position: 50% 50%;
-        filter: hue-rotate(270deg);
-      }
-
-      100% {
-        background-position: 0% 50%;
-        filter: hue-rotate(360deg);
-      }
-    }
-  </style>
-</head>
-
-<body>
-  <header>
-    <hgroup>
-      <h1 hidden>collection of philosophical & technical insights</h1>
-      <h2 id="star" style="color: cyan; font-size: 6rem; margin: 0">✦</h2>
-    </hgroup>
-  </header>
-  <main>
-    <article>
-      <header>
-        <time datetime="2025-09-26" hidden>26.09.2025</time>
-      </header>
-      <p>i have no special talents. i am only passionately curious</p>
-    </article>
-    <article>
-      <header>
-        <time datetime="2025-09-27" hidden>27.09.2025</time>
-      </header>
-      <p>the meaning of life is to give life a meaning</p>
-    </article>
-  </main>
-</body>
-
+    </style>
+  </head>
+  <body>
+    <header>
+      <hgroup style="line-height: 1">
+        <h1 style="margin: 0">🪴</h1>
+        <h2 style="margin-top: 0; margin-bottom: 0">Digital Garden</h2>
+        <small style="color: darkgray">Because I suck at plants</small>
+      </hgroup>
+    </header>
+    <main>
+      <p>I have no special talents. I am only passionately curious.</p>
+      <p>Simplicity is the ultimate sophistication.</p>
+      <p>The important thing is not to stop questioning. Curiosity has its own reason for existing.</p>
+    </main>
+  </body>
 </html>
