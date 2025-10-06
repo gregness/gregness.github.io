@@ -1,30 +1,348 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <title>Digital Garden</title>
-    <meta name="description" content="Simplicity is the ultimate sophistication.">
-    <link rel="icon" href="data:image/svg+xml,&lt;svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22>&lt;text y=%22.9em%22 font-size=%2290%22>🪴</text></svg>">
-    <style>
-      html {
-        font-family: Helvetica;
-        -webkit-font-smoothing: antialiased;
-      }
-    </style>
-  </head>
-  <body>
-    <header>
-      <hgroup style="line-height: 1">
-        <h1 style="margin: 0">🪴</h1>
-        <h2 style="margin-top: 0; margin-bottom: 0">Digital Garden</h2>
-        <small style="color: darkgray">Because I suck at plants</small>
-      </hgroup>
-    </header>
-    <main>
-      <p>I have no special talents. I am only passionately curious.</p>
-      <p>Simplicity is the ultimate sophistication.</p>
-      <p>The important thing is not to stop questioning. Curiosity has its own reason for existing.</p>
-    </main>
-  </body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <title>🍭 AI Candy</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;700;900&family=Inter:wght@300;400;500&family=Playfair+Display:wght@700;900&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            body {
+                height: 100vh;
+                overflow: hidden;
+                font-family: "JetBrains Mono", monospace;
+                background: #0a0a0a;
+            }
+            .a {
+                position: relative;
+                width: 100%;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: linear-gradient(
+                    135deg,
+                    #ff0844 0%,
+                    #ff6b00 14%,
+                    #ffed00 28%,
+                    #00d4ff 42%,
+                    #0066ff 56%,
+                    #7b2cbf 70%,
+                    #ff006e 84%,
+                    #ff0844 100%
+                );
+                background-size: 400% 400%;
+                animation: b 20s ease infinite;
+            }
+            @keyframes b {
+                0%,
+                100% {
+                    background-position: 0 50%;
+                }
+                50% {
+                    background-position: 100% 50%;
+                }
+            }
+            .c {
+                position: absolute;
+                opacity: 0.5;
+                filter: blur(60px);
+                will-change: transform;
+                transform: translateZ(0);
+                backface-visibility: hidden;
+            }
+            .c.d {
+                width: 500px;
+                height: 500px;
+                border-radius: 40% 60% 70% 30%/40% 50% 60% 50%;
+                background: radial-gradient(
+                    circle at 30% 40%,
+                    #ff0080,
+                    #d4004e,
+                    #9d00ff
+                );
+                top: 5%;
+                left: 5%;
+                animation:
+                    e 15s infinite ease-in-out,
+                    f 20s infinite ease-in-out,
+                    g 40s linear infinite;
+            }
+            .c.h {
+                width: 600px;
+                height: 600px;
+                border-radius: 60% 40% 30% 70%/50% 60% 40% 50%;
+                background: radial-gradient(
+                    circle at 60% 50%,
+                    #00b4ff,
+                    #0080ff,
+                    #5500ff,
+                    #8000ff
+                );
+                bottom: 10%;
+                right: 5%;
+                animation:
+                    e 18s infinite ease-in-out reverse,
+                    f 25s infinite ease-in-out reverse,
+                    g 35s linear infinite reverse;
+            }
+            .c.i {
+                width: 450px;
+                height: 450px;
+                border-radius: 30% 70% 70% 30%/60% 40% 60% 40%;
+                background: radial-gradient(
+                    ellipse at 40% 60%,
+                    #00ff88,
+                    #00ff44,
+                    #00ccff
+                );
+                top: 40%;
+                left: 10%;
+                animation:
+                    e 22s infinite ease-in-out,
+                    f 18s infinite ease-in-out,
+                    j 8s infinite ease-in-out;
+            }
+            .c.k {
+                width: 550px;
+                height: 550px;
+                border-radius: 70% 30% 50% 50%/30% 70% 70% 30%;
+                background: radial-gradient(
+                    circle at 70% 30%,
+                    #ffee00,
+                    #ff8800,
+                    #ff0000,
+                    #ff0066
+                );
+                top: 15%;
+                right: 10%;
+                animation:
+                    e 17s infinite ease-in-out reverse,
+                    f 22s infinite ease-in-out,
+                    g 45s linear infinite;
+            }
+            .c.l {
+                width: 400px;
+                height: 400px;
+                border-radius: 50% 50% 30% 70%/70% 30% 70% 30%;
+                background: radial-gradient(
+                    circle at 50% 50%,
+                    #00ffee,
+                    #ff00dd,
+                    #cc00ff
+                );
+                bottom: 20%;
+                left: 30%;
+                animation:
+                    e 19s infinite ease-in-out,
+                    f 16s infinite ease-in-out reverse,
+                    g 30s linear infinite reverse;
+            }
+            @keyframes e {
+                0%,
+                100% {
+                    transform: translate3d(0, 0, 0);
+                }
+                25% {
+                    transform: translate3d(30px, -30px, 0);
+                }
+                50% {
+                    transform: translate3d(-20px, 20px, 0);
+                }
+                75% {
+                    transform: translate3d(40px, 10px, 0);
+                }
+            }
+            @keyframes g {
+                from {
+                    transform: rotate(0deg) translateZ(0);
+                }
+                to {
+                    transform: rotate(360deg) translateZ(0);
+                }
+            }
+            @keyframes j {
+                0%,
+                100% {
+                    opacity: 0.25;
+                }
+                50% {
+                    opacity: 0.4;
+                }
+            }
+            @keyframes f {
+                0%,
+                100% {
+                    border-radius: 40% 60% 70% 30%/40% 50% 60% 50%;
+                }
+                50% {
+                    border-radius: 30% 70% 70% 30%/60% 40% 60% 40%;
+                }
+            }
+            .m {
+                position: relative;
+                z-index: 10;
+                text-align: center;
+            }
+            h1 {
+                font-size: clamp(6rem, 20vw, 16rem);
+                font-weight: 900;
+                font-family: "Playfair Display", serif;
+                color: #fff;
+                text-transform: lowercase;
+                animation: n 3s ease-in-out infinite alternate;
+                text-shadow:
+                    0 0 20px rgba(255, 255, 255, 0.5),
+                    0 0 40px rgba(255, 255, 255, 0.3),
+                    0 0 60px rgba(255, 255, 255, 0.2);
+            }
+            @keyframes n {
+                from {
+                    text-shadow:
+                        0 0 20px rgba(255, 255, 255, 0.5),
+                        0 0 40px rgba(255, 255, 255, 0.3),
+                        0 0 60px rgba(255, 255, 255, 0.2);
+                }
+                to {
+                    text-shadow:
+                        0 0 30px rgba(255, 255, 255, 0.8),
+                        0 0 60px rgba(255, 255, 255, 0.5),
+                        0 0 90px rgba(255, 255, 255, 0.3);
+                }
+            }
+            .o {
+                font-size: clamp(1rem, 3vw, 1.5rem);
+                font-family: "Inter", sans-serif;
+                color: rgba(255, 255, 255, 0.66);
+                font-weight: 400;
+                animation: p 1.5s ease-out;
+                max-width: 50ch;
+                line-height: 1.6;
+            }
+            .o mark,
+            .o code {
+                font-family: "JetBrains Mono", monospace;
+                background-color: #000;
+                padding: 0.1em 0.4em;
+                color: #90ee90;
+                font-weight: 600;
+                backdrop-filter: blur(10px);
+                border: 1px solid rgba(255, 255, 255, 0.3);
+                box-shadow:
+                    0 2px 8px rgba(0, 0, 0, 0.1),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.2);
+                transition: all 0.3s ease;
+            }
+            @keyframes p {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+            .q {
+                position: absolute;
+                width: 3px;
+                height: 3px;
+                background: #fff;
+                border-radius: 50%;
+                opacity: 0;
+                will-change: transform, opacity;
+                animation: r 12s infinite;
+            }
+            @keyframes r {
+                0% {
+                    opacity: 0;
+                    transform: translate3d(0, 0, 0) scale(1);
+                }
+                10% {
+                    opacity: 0.6;
+                }
+                90% {
+                    opacity: 0.6;
+                }
+                100% {
+                    opacity: 0;
+                    transform: translate3d(var(--tx), var(--ty), 0) scale(0);
+                }
+            }
+            footer {
+                position: absolute;
+                bottom: 1rem;
+                left: 50%;
+                transform: translateX(-50%);
+                z-index: 10;
+                display: flex;
+                gap: 1.5rem;
+                align-items: center;
+                justify-content: center;
+            }
+            footer a {
+                padding: 0;
+                transition: all 0.5s ease-in-out;
+                text-decoration: none;
+                overflow: hidden;
+                border-radius: 4px;
+            }
+            footer svg {
+                width: 48px;
+                height: 48px;
+                background-color: #fff;
+                display: block;
+                opacity: 0.75;
+                transition: opacity 0.5s ease-in-out;
+                overflow: hidden;
+            }
+            footer a:hover svg {
+                opacity: 1;
+            }
+        </style>
+    </head>
+    <body>
+        <main class="a">
+            <div class="c d"></div>
+            <div class="c h"></div>
+            <div class="c i"></div>
+            <div class="c k"></div>
+            <div class="c l"></div>
+            <div class="m">
+                <h1>greg</h1>
+                <div class="o">design & engineering.</div>
+            </div>
+            <footer></footer>
+        </main>
+        <script>
+            const _0x4a = document.querySelector(".a"),
+                _0x5b = document.createDocumentFragment();
+            for (let _0x1c = 0; _0x1c < 15; _0x1c++) {
+                const _0x2d = document.createElement("div");
+                ((_0x2d.className = "q"),
+                    (_0x2d.style.left = 100 * Math.random() + "%"),
+                    (_0x2d.style.top = 100 * Math.random() + "%"),
+                    _0x2d.style.setProperty(
+                        "--tx",
+                        150 * (Math.random() - 0.5) + "px",
+                    ),
+                    _0x2d.style.setProperty(
+                        "--ty",
+                        150 * (Math.random() - 0.5) + "px",
+                    ),
+                    (_0x2d.style.animationDelay = 12 * Math.random() + "s"),
+                    _0x5b.appendChild(_0x2d));
+            }
+            _0x4a.appendChild(_0x5b);
+        </script>
+    </body>
 </html>
