@@ -220,10 +220,12 @@
                 }
             }
             .o {
-                font-size: clamp(1rem, 3vw, 1.5rem);
+                font-size: clamp(0.75rem, 3vw, 1rem);
                 font-family: "Inter", sans-serif;
+                letter-spacing: 1px;
                 color: rgba(255, 255, 255, 0.66);
-                font-weight: 400;
+                font-weight: 900;
+                text-transform: uppercase;
                 animation: p 1.5s ease-out;
                 max-width: 50ch;
                 line-height: 1.6;
@@ -251,16 +253,6 @@
                     opacity: 1;
                     transform: translateY(0);
                 }
-            }
-            .q {
-                position: absolute;
-                width: 3px;
-                height: 3px;
-                background: #fff;
-                border-radius: 50%;
-                opacity: 0;
-                will-change: transform, opacity;
-                animation: r 12s infinite;
             }
             @keyframes r {
                 0% {
@@ -319,7 +311,7 @@
             <div class="c l"></div>
             <div class="m">
                 <h1>greg</h1>
-                <div class="o">design & engineering.</div>
+                <div class="o">design & engineering</div>
             </div>
             <footer></footer>
         </main>
