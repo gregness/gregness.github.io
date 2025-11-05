@@ -3,8 +3,50 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>Simplicity</title>
-    <style>
+    <title>Stoic Wisdom</title>
+    <meta name="description" content="Timeless wisdom from the Stoics">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🏛️</text></svg>">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap" rel="stylesheet" />
+    <script type="text/javascript">
+    (function(c,l,a,r,i,t,y){
+        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    })(window, document, "clarity", "script", "u154lch6av");
+</script>
+        <style>
+        /* Typography Scale - Golden Ratio (1.618) */
+        :root {
+            --ratio: 1.618;
+            --base-size: 1rem;
+
+            /* Modular Scale based on Golden Ratio */
+            --text-xs: calc(var(--base-size) / var(--ratio) / var(--ratio) / var(--ratio));
+            --text-sm: calc(var(--base-size) / var(--ratio) / var(--ratio));
+            --text-base: var(--base-size);
+            --text-md: calc(var(--base-size) * var(--ratio));
+            --text-lg: calc(var(--base-size) * var(--ratio) * var(--ratio));
+            --text-xl: calc(var(--base-size) * var(--ratio) * var(--ratio) * var(--ratio));
+            --text-2xl: calc(var(--base-size) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio));
+            --text-3xl: calc(var(--base-size) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio) * var(--ratio));
+
+            /* Colors */
+            --bg: #0a0a0a;
+            --text: #e8e8e8;
+            --text-muted: #888888;
+            --accent: #c9a961;
+
+            /* Spacing based on Golden Ratio */
+            --space-xs: calc(var(--base-size) / var(--ratio));
+            --space-sm: var(--base-size);
+            --space-md: calc(var(--base-size) * var(--ratio));
+            --space-lg: calc(var(--base-size) * var(--ratio) * var(--ratio));
+            --space-xl: calc(var(--base-size) * var(--ratio) * var(--ratio) * var(--ratio));
+        }
+
+
         * {
             margin: 0;
             padding: 0;
